@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alan&#39;s website</title>
-    <link>/</link>
-    <description>Recent content on Alan&#39;s website</description>
+    <title>个人 on Alan&#39;s website</title>
+    <link>/categories/%E4%B8%AA%E4%BA%BA/</link>
+    <description>Recent content in 个人 on Alan&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/%E4%B8%AA%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -72,15 +72,6 @@
       
       <guid>/2018/10/28/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%85/</guid>
       <description>酒是个好东西呀！</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Sat, 20 Oct 2018 20:57:00 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This blog is made by AlanWang, who is a student in Hohai University and major in Environmental Science and Engineering.</description>
     </item>
     
   </channel>

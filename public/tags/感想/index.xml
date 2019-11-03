@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alan&#39;s website</title>
-    <link>/</link>
-    <description>Recent content on Alan&#39;s website</description>
+    <title>感想 on Alan&#39;s website</title>
+    <link>/tags/%E6%84%9F%E6%83%B3/</link>
+    <description>Recent content in 感想 on Alan&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E6%84%9F%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -46,15 +46,6 @@
     </item>
     
     <item>
-      <title>喝了酒的师兄贼帅2</title>
-      <link>/2018/10/30/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%852/</link>
-      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/10/30/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%852/</guid>
-      <description>酒真的没白喝！</description>
-    </item>
-    
-    <item>
       <title>尊重博士</title>
       <link>/2018/10/30/%E5%B0%8A%E9%87%8D%E5%8D%9A%E5%A3%AB/</link>
       <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
@@ -63,24 +54,6 @@
       <description>博士都不容易呀，尤其是女博士，没法谈恋爱，都27了。
 男博士也不容易，头发都没了。
 日以继夜，没日没夜，一周七天，感悟文献。</description>
-    </item>
-    
-    <item>
-      <title>喝了酒的师兄贼帅</title>
-      <link>/2018/10/28/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%85/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/10/28/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%85/</guid>
-      <description>酒是个好东西呀！</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Sat, 20 Oct 2018 20:57:00 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This blog is made by AlanWang, who is a student in Hohai University and major in Environmental Science and Engineering.</description>
     </item>
     
   </channel>
