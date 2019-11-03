@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alan&#39;s website</title>
+    <title>Haolan&#39;s website</title>
     <link>/</link>
-    <description>Recent content on Alan&#39;s website</description>
+    <description>Recent content on Haolan&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0000</lastBuildDate>
@@ -80,7 +80,7 @@
       <pubDate>Sat, 20 Oct 2018 20:57:00 -0700</pubDate>
       
       <guid>/about/</guid>
-      <description>This blog is made by AlanWang, who is a student in Hohai University and major in Environmental Science and Engineering.</description>
+      <description>This blog is made by Haolan Wang live in China, who is a student in Hohai University and major in Environmental Science and Engineering.</description>
     </item>
     
   </channel>
