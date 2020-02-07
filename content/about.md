@@ -3,4 +3,8 @@ title: "About"
 date: "2018-10-20T20:57:00-07:00"
 ---
 
-This blog is made by **Haolan Wang** live in China, who is a student in **Hohai University** and major in **Environmental Science and Engineering**. 
+欢迎光临，这是个人的Blog，随机不定时看心情更新。
+
+扫描二维码可关注公众号！
+
+![](/./about_files/微信图片_20200207210047.jpg)
