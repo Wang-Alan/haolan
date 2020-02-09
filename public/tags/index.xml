@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Haolan&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>感想</title>
+      <link>/tags/%E6%84%9F%E6%83%B3/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%84%9F%E6%83%B3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>转载</title>
@@ -17,15 +26,6 @@
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/%E8%BD%AC%E8%BD%BD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>感想</title>
-      <link>/tags/%E6%84%9F%E6%83%B3/</link>
-      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E6%84%9F%E6%83%B3/</guid>
       <description></description>
     </item>
     
