@@ -6,10 +6,19 @@
     <description>Recent content in 个人 on Haolan&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/%E4%B8%AA%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>/2020/02/12/test/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/02/12/test/</guid>
+      <description>Test!</description>
+    </item>
     
     <item>
       <title>问个问题</title>
