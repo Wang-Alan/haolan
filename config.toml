@@ -1,4 +1,4 @@
-baseURL = "https://haolan.wang"
+baseURL = "http://haolan.wang"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Haolan's Website"
