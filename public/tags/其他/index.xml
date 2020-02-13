@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>其他 on Haolan&#39;s website</title>
+    <title>其他 on Haolan&#39;s Website</title>
     <link>/tags/%E5%85%B6%E4%BB%96/</link>
-    <description>Recent content in 其他 on Haolan&#39;s website</description>
+    <description>Recent content in 其他 on Haolan&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/%E5%85%B6%E4%BB%96/index.xml" rel="self" type="application/rss+xml" />
@@ -13,11 +14,12 @@
     
     <item>
       <title>Test</title>
-      <link>/2020/02/12/test/</link>
+      <link>/post/test/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/12/test/</guid>
-      <description>Test!</description>
+      <guid>/post/test/</guid>
+      <description>Test!
+如何修改？</description>
     </item>
     
   </channel>

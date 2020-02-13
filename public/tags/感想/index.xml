@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>感想 on Haolan&#39;s website</title>
+    <title>感想 on Haolan&#39;s Website</title>
     <link>/tags/%E6%84%9F%E6%83%B3/</link>
-    <description>Recent content in 感想 on Haolan&#39;s website</description>
+    <description>Recent content in 感想 on Haolan&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/%E6%84%9F%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +14,10 @@
     
     <item>
       <title>问个问题</title>
-      <link>/2020/02/09/%E9%97%AE%E4%B8%AA%E9%97%AE%E9%A2%98/</link>
+      <link>/post/%E9%97%AE%E4%B8%AA%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/09/%E9%97%AE%E4%B8%AA%E9%97%AE%E9%A2%98/</guid>
+      <guid>/post/%E9%97%AE%E4%B8%AA%E9%97%AE%E9%A2%98/</guid>
       <description>在不？做个小调研：你老师会占用你多少时间做一些与科研无关的事，比如帮他写材料，帮他填表，帮他写基金，帮他申报项目，帮他做PPT等
 A同学没吧，就是有次让我给他冲个公交卡，还得有发票，我跑了好几站路去公交公司给他冲的别的没了平时见不到人，，麻烦也麻烦不到啊
 B同学我们师门比较大，所以不一定是我做我目前完全没有审稿算不（算）审稿有点多审稿有个四五篇了我同门有人什么也没做过我觉得都是闲得无聊给老师干干活一学期花大概两三周
@@ -28,19 +29,19 @@ E同学我们是帮他拿快递帮他打杂帮他写班主任日志每天都
     
     <item>
       <title>我要为自由高歌</title>
-      <link>/2020/02/06/%E6%88%91%E8%A6%81%E4%B8%BA%E8%87%AA%E7%94%B1%E9%AB%98%E6%AD%8C/</link>
+      <link>/post/%E6%88%91%E8%A6%81%E4%B8%BA%E8%87%AA%E7%94%B1%E9%AB%98%E6%AD%8C/</link>
       <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/06/%E6%88%91%E8%A6%81%E4%B8%BA%E8%87%AA%E7%94%B1%E9%AB%98%E6%AD%8C/</guid>
+      <guid>/post/%E6%88%91%E8%A6%81%E4%B8%BA%E8%87%AA%E7%94%B1%E9%AB%98%E6%AD%8C/</guid>
       <description>只有当丧失自由的时候，才能感受到自由的可贵。</description>
     </item>
     
     <item>
       <title>新年快乐</title>
-      <link>/2020/01/02/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</link>
+      <link>/post/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/01/02/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</guid>
+      <guid>/post/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</guid>
       <description>2019年，看成果其实还挺好的
 论文两篇，一篇Water Research，一篇Desalination and Water Treatment其实我还有一篇帮别人投的，也中了
 11月15日 Water Research中；11月19日 Envoronmental science processes and impacts中，四天两篇，爽嗷
@@ -50,29 +51,29 @@ E同学我们是帮他拿快递帮他打杂帮他写班主任日志每天都
     
     <item>
       <title>失眠后的胡思乱想</title>
-      <link>/2019/12/08/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</link>
+      <link>/post/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</link>
       <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/12/08/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</guid>
+      <guid>/post/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</guid>
       <description>1. 注重细节的动机- 优秀是一种习惯- 这件事对我很重要- 避免被老师批评2. 如何在工作中做好细节- 任何人的思维都有盲点，不是注意就有用的- 积累经验，听取他人意见3. 同时处理多件事务的能力精力（意志力）=电池- 长期处于充不满电（经常早起），天天放电至将近关机的状态- 而我本科的状态可能每天只消耗50%的电量，且每晚能充满- 高电量时的性能会好一些- 长期电量耗竭会对电池产生永久性损伤充电的方法- 睡觉- 吃甜食如何提高- 电池扩容- 提高处理器性能——更小的能耗，更高的处理速度更好的使用习惯——及时充电，调整作息</description>
     </item>
     
     <item>
       <title>感谢云哲</title>
-      <link>/2019/11/04/%E6%84%9F%E8%B0%A2%E4%BA%91%E5%93%B2/</link>
+      <link>/post/%E6%84%9F%E8%B0%A2%E4%BA%91%E5%93%B2/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/11/04/%E6%84%9F%E8%B0%A2%E4%BA%91%E5%93%B2/</guid>
+      <guid>/post/%E6%84%9F%E8%B0%A2%E4%BA%91%E5%93%B2/</guid>
       <description>附庸风雅的我嗷~
 喜欢海纳百川。</description>
     </item>
     
     <item>
       <title>投了投了</title>
-      <link>/2019/08/16/%E6%8A%95%E4%BA%86%E6%8A%95%E4%BA%86/</link>
+      <link>/post/%E6%8A%95%E4%BA%86%E6%8A%95%E4%BA%86/</link>
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/08/16/%E6%8A%95%E4%BA%86%E6%8A%95%E4%BA%86/</guid>
+      <guid>/post/%E6%8A%95%E4%BA%86%E6%8A%95%E4%BA%86/</guid>
       <description>虽然没赶上618，但是我赶上了816啊！
 都是电商的好日子。
 双11会发生些什么呢？也许什么都不会发生。</description>
@@ -80,10 +81,10 @@ E同学我们是帮他拿快递帮他打杂帮他写班主任日志每天都
     
     <item>
       <title>鸽了鸽了</title>
-      <link>/2019/06/18/%E9%B8%BD%E4%BA%86%E9%B8%BD%E4%BA%86/</link>
+      <link>/post/%E9%B8%BD%E4%BA%86%E9%B8%BD%E4%BA%86/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/06/18/%E9%B8%BD%E4%BA%86%E9%B8%BD%E4%BA%86/</guid>
+      <guid>/post/%E9%B8%BD%E4%BA%86%E9%B8%BD%E4%BA%86/</guid>
       <description>618投稿的愿望注定要破灭了。
 第一篇论文投稿时间也不是我一个人能确定的啊！
 鸽就鸽了……</description>
@@ -91,10 +92,10 @@ E同学我们是帮他拿快递帮他打杂帮他写班主任日志每天都
     
     <item>
       <title>新年好</title>
-      <link>/2019/01/01/%E6%96%B0%E5%B9%B4%E5%A5%BD/</link>
+      <link>/post/%E6%96%B0%E5%B9%B4%E5%A5%BD/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/01/01/%E6%96%B0%E5%B9%B4%E5%A5%BD/</guid>
+      <guid>/post/%E6%96%B0%E5%B9%B4%E5%A5%BD/</guid>
       <description>新年好！
 夜游玄武湖，2018年最后悔的事就是来南京。
 今天有两个消息八卦，失恋和失恋。
@@ -103,10 +104,10 @@ E同学我们是帮他拿快递帮他打杂帮他写班主任日志每天都
     
     <item>
       <title>尊重博士</title>
-      <link>/2018/10/30/%E5%B0%8A%E9%87%8D%E5%8D%9A%E5%A3%AB/</link>
+      <link>/post/%E5%B0%8A%E9%87%8D%E5%8D%9A%E5%A3%AB/</link>
       <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/10/30/%E5%B0%8A%E9%87%8D%E5%8D%9A%E5%A3%AB/</guid>
+      <guid>/post/%E5%B0%8A%E9%87%8D%E5%8D%9A%E5%A3%AB/</guid>
       <description>博士都不容易呀，尤其是女博士，没法谈恋爱，都27了。
 男博士也不容易，头发都没了。
 日以继夜，没日没夜，一周七天，感悟文献。</description>

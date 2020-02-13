@@ -1,0 +1,27 @@
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    {{- template "breadcrumb" (dict "node" . "start" .) -}}
+  </ul>
+</nav>
+
+{{- define "breadcrumb" -}}
+  {{- if .node.Parent -}}
+    {{- template "breadcrumb" (dict "node" .node.Parent "start" .start) -}}
+  {{- else if not .node.IsHome -}}
+    {{- template "breadcrumb" (dict "node" .node.Site.Home "start" .start) -}}
+  {{- end -}}
+
+  {{- if eq .node .start -}}
+    <li class="is-active">
+      <button class="button is-dark is-outlined is-focused">
+        <a href="#" aria-current="page">{{- .node.LinkTitle -}}</a>
+      </button>
+    </li>
+  {{- else -}}
+    <li>
+      <button class="button is-dark">
+        <a href="{{- .node.Permalink -}}">{{- .node.LinkTitle -}}</a>
+      </button>
+    </li>
+  {{- end -}}
+{{- end -}}

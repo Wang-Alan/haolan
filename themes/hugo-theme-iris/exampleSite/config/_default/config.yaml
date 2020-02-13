@@ -1,0 +1,63 @@
+baseURL: "https://example.com"
+# theme: hugo-theme-iris
+
+# googleAnalytics: UA-123-45
+disqusShortname: hugothemeiris
+
+# paginate: 3
+canonifyURLs: true
+enableRobotsTXT: true
+pluralizeListTitles: false
+
+# hugo syntax highlighting
+pygmentsUseClasses: true
+pygmentsCodefences: true
+
+enableEmoji: true
+enableGitInfo: true
+enableInlineShortcodes: true
+
+taxonomies: {}
+#   - tag: tags
+
+imaging:
+  quality: 75
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Configure Languages
+DefaultContentLanguage: en
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    languageCode: en-us
+    params:
+      author: peaceiris
+      description: Hugo IRIS Theme Demo Site
+      twitter:
+        username: piris314
+      ogp:
+        siteName: Hugo Theme Iris
+        image: images/ogp.jpg
+        locale: en-US
+    title: Hugo IRIS Theme
+    weight: 1
+  ja:
+    contentDir: content/ja
+    languageName: 日本語
+    languageCode: ja-jp
+    params:
+      author: peaceiris
+      description: Hugo IRIS テーマデモサイト
+      twitter:
+        username: piris314
+      ogp:
+        siteName: Hugo Theme Iris
+        image: images/ogp.jpg
+        locale: js-JP
+    title: Hugo IRIS テーマ
+    weight: 2

@@ -1,0 +1,11 @@
+---
+title: 文献整理
+author: whl
+date: '2019-11-12'
+slug: 文献整理
+categories:
+  - 个人
+tags:
+  - 总结
+---
+坚定决心，所有文献向ENDNOTE转移！

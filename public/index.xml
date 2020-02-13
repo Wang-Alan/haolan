@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Haolan&#39;s website</title>
+    <title>Haolan&#39;s Website</title>
     <link>/</link>
-    <description>Recent content on Haolan&#39;s website</description>
+    <description>Recent content on Haolan&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test</title>
-      <link>/2020/02/12/test/</link>
-      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/02/12/test/</guid>
-      <description>Test!</description>
-    </item>
-    
-    <item>
       <title>问个问题</title>
-      <link>/2020/02/09/%E9%97%AE%E4%B8%AA%E9%97%AE%E9%A2%98/</link>
+      <link>/post/%E9%97%AE%E4%B8%AA%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/09/%E9%97%AE%E4%B8%AA%E9%97%AE%E9%A2%98/</guid>
+      <guid>/post/%E9%97%AE%E4%B8%AA%E9%97%AE%E9%A2%98/</guid>
       <description>在不？做个小调研：你老师会占用你多少时间做一些与科研无关的事，比如帮他写材料，帮他填表，帮他写基金，帮他申报项目，帮他做PPT等
 A同学没吧，就是有次让我给他冲个公交卡，还得有发票，我跑了好几站路去公交公司给他冲的别的没了平时见不到人，，麻烦也麻烦不到啊
 B同学我们师门比较大，所以不一定是我做我目前完全没有审稿算不（算）审稿有点多审稿有个四五篇了我同门有人什么也没做过我觉得都是闲得无聊给老师干干活一学期花大概两三周
@@ -37,10 +29,10 @@ E同学我们是帮他拿快递帮他打杂帮他写班主任日志每天都
     
     <item>
       <title>™的爱情啊~</title>
-      <link>/2020/02/07/%E7%9A%84%E7%88%B1%E6%83%85%E5%95%8A/</link>
+      <link>/post/%E7%9A%84%E7%88%B1%E6%83%85%E5%95%8A/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/07/%E7%9A%84%E7%88%B1%E6%83%85%E5%95%8A/</guid>
+      <guid>/post/%E7%9A%84%E7%88%B1%E6%83%85%E5%95%8A/</guid>
       <description>我闹了好久才发现我爱的是以前的你，而我对现在的你好像没有一点好感，我放不下的是那段感情，不是你
 朱茵说：“如果一个人真的爱你，你是走不掉也跑不了的，除非她有意放你走，你还有什么不明白不甘心的
 哪天想起我也请你记得 当时我很喜欢你是真的 那些眼泪是真的 想和你有个未来也是真的
@@ -52,19 +44,19 @@ E同学我们是帮他拿快递帮他打杂帮他写班主任日志每天都
     
     <item>
       <title>我要为自由高歌</title>
-      <link>/2020/02/06/%E6%88%91%E8%A6%81%E4%B8%BA%E8%87%AA%E7%94%B1%E9%AB%98%E6%AD%8C/</link>
+      <link>/post/%E6%88%91%E8%A6%81%E4%B8%BA%E8%87%AA%E7%94%B1%E9%AB%98%E6%AD%8C/</link>
       <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/06/%E6%88%91%E8%A6%81%E4%B8%BA%E8%87%AA%E7%94%B1%E9%AB%98%E6%AD%8C/</guid>
+      <guid>/post/%E6%88%91%E8%A6%81%E4%B8%BA%E8%87%AA%E7%94%B1%E9%AB%98%E6%AD%8C/</guid>
       <description>只有当丧失自由的时候，才能感受到自由的可贵。</description>
     </item>
     
     <item>
       <title>年终总结</title>
-      <link>/2020/01/11/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
+      <link>/post/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/01/11/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
+      <guid>/post/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
       <description>以上，是做年终总结PPT之前的一个提纲式总结。
 PPT的实质应该就是提纲，以及必要的演示内容。如果我能把年终总结的PPT做成上面这样，我就有更多的时间去思考，而不是美化PPT。即使我想学习做好PPT，看教学视频不是最好的方法吗？我一定要花超大量时间做，然后被指导逐渐提升吗？
 来河海之后，做PPT有了很多规范，比如：
@@ -73,10 +65,10 @@ PPT的实质应该就是提纲，以及必要的演示内容。如果我能把�
     
     <item>
       <title>新年快乐</title>
-      <link>/2020/01/02/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</link>
+      <link>/post/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/01/02/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</guid>
+      <guid>/post/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</guid>
       <description>2019年，看成果其实还挺好的
 论文两篇，一篇Water Research，一篇Desalination and Water Treatment其实我还有一篇帮别人投的，也中了
 11月15日 Water Research中；11月19日 Envoronmental science processes and impacts中，四天两篇，爽嗷
@@ -86,19 +78,19 @@ PPT的实质应该就是提纲，以及必要的演示内容。如果我能把�
     
     <item>
       <title>失眠后的胡思乱想</title>
-      <link>/2019/12/08/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</link>
+      <link>/post/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</link>
       <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/12/08/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</guid>
+      <guid>/post/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</guid>
       <description>1. 注重细节的动机- 优秀是一种习惯- 这件事对我很重要- 避免被老师批评2. 如何在工作中做好细节- 任何人的思维都有盲点，不是注意就有用的- 积累经验，听取他人意见3. 同时处理多件事务的能力精力（意志力）=电池- 长期处于充不满电（经常早起），天天放电至将近关机的状态- 而我本科的状态可能每天只消耗50%的电量，且每晚能充满- 高电量时的性能会好一些- 长期电量耗竭会对电池产生永久性损伤充电的方法- 睡觉- 吃甜食如何提高- 电池扩容- 提高处理器性能——更小的能耗，更高的处理速度更好的使用习惯——及时充电，调整作息</description>
     </item>
     
     <item>
       <title>即插即用的能力</title>
-      <link>/2019/11/24/%E5%8D%B3%E6%8F%92%E5%8D%B3%E7%94%A8%E7%9A%84%E8%83%BD%E5%8A%9B/</link>
+      <link>/post/%E5%8D%B3%E6%8F%92%E5%8D%B3%E7%94%A8%E7%9A%84%E8%83%BD%E5%8A%9B/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/11/24/%E5%8D%B3%E6%8F%92%E5%8D%B3%E7%94%A8%E7%9A%84%E8%83%BD%E5%8A%9B/</guid>
+      <guid>/post/%E5%8D%B3%E6%8F%92%E5%8D%B3%E7%94%A8%E7%9A%84%E8%83%BD%E5%8A%9B/</guid>
       <description>这个能力大约是某优秀的phD student快速学习第一次写完重点研发项目的申报书之后，老师在某天晚上感慨的时候指导我的。
 他当时对这个能力的定义是：对于完全陌生的工业废水排放，该phD 能快速学习，抓住问题的重点，顺利、按时、保质的完成了申报书的编写。
 这位phD拿来就用，尽管他原来没接触过相关内容，并且还好用。
@@ -108,10 +100,10 @@ PPT的实质应该就是提纲，以及必要的演示内容。如果我能把�
     
     <item>
       <title>合理安排时间的能力</title>
-      <link>/2019/11/24/%E5%90%88%E7%90%86%E5%AE%89%E6%8E%92%E6%97%B6%E9%97%B4%E7%9A%84%E8%83%BD%E5%8A%9B/</link>
+      <link>/post/%E5%90%88%E7%90%86%E5%AE%89%E6%8E%92%E6%97%B6%E9%97%B4%E7%9A%84%E8%83%BD%E5%8A%9B/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/11/24/%E5%90%88%E7%90%86%E5%AE%89%E6%8E%92%E6%97%B6%E9%97%B4%E7%9A%84%E8%83%BD%E5%8A%9B/</guid>
+      <guid>/post/%E5%90%88%E7%90%86%E5%AE%89%E6%8E%92%E6%97%B6%E9%97%B4%E7%9A%84%E8%83%BD%E5%8A%9B/</guid>
       <description>这个能力被提出的背景是长沙开会回来之后，在修改文章的时候。
 提出的背景是因为我在去长沙的火车上看了一路电影（注：其他同学或睡觉，或看游戏视频，总之没有学习的）。当时在火车上，仅老师一人最初用笔记本办公，后期与师姐一同讨论工作。不愧是老师，果然在工作方面有许多值得我学习的地方。
 当时在指导我这个能力的时候，给我印象最深刻的一句话是你自己有没有事自己不知道么。
@@ -123,10 +115,10 @@ PPT的实质应该就是提纲，以及必要的演示内容。如果我能把�
     
     <item>
       <title>同时处理多项事务的能力</title>
-      <link>/2019/11/24/%E5%90%8C%E6%97%B6%E5%A4%84%E7%90%86%E5%A4%9A%E9%A1%B9%E4%BA%8B%E5%8A%A1%E7%9A%84%E8%83%BD%E5%8A%9B/</link>
+      <link>/post/%E5%90%8C%E6%97%B6%E5%A4%84%E7%90%86%E5%A4%9A%E9%A1%B9%E4%BA%8B%E5%8A%A1%E7%9A%84%E8%83%BD%E5%8A%9B/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/11/24/%E5%90%8C%E6%97%B6%E5%A4%84%E7%90%86%E5%A4%9A%E9%A1%B9%E4%BA%8B%E5%8A%A1%E7%9A%84%E8%83%BD%E5%8A%9B/</guid>
+      <guid>/post/%E5%90%8C%E6%97%B6%E5%A4%84%E7%90%86%E5%A4%9A%E9%A1%B9%E4%BA%8B%E5%8A%A1%E7%9A%84%E8%83%BD%E5%8A%9B/</guid>
       <description>这个能力提出的背景是在某会议筹备期间，我被课题组分配了一些工作，我积极工作，直至会议开幕前夜，准备工作基本完成，晚上在酒店吃自助餐的时候，老师对我进行了指导：
 首先，还是举例子，还是那位优秀的phD student，偶尔做一些有关项目的工作，但是在项目工作正常进行的同时，他自己的科研仍然没有拉下，该完成的模型计算依然顺利完成。而我写基金的几个关键点，却迟迟不能确定。于是，对我进行了指导。
 这个能力的定义：即使要做其他事情，科研不能拉下。为课题组做的工作，并不是自己科研进展慢的理由和借口，而是因为同时处理多项事务的能力没有学会。深受启发，谨以此文留念。
@@ -137,116 +129,11 @@ PPT的实质应该就是提纲，以及必要的演示内容。如果我能把�
     
     <item>
       <title>良心推荐</title>
-      <link>/2019/11/21/%E8%89%AF%E5%BF%83%E6%8E%A8%E8%8D%90/</link>
+      <link>/post/%E8%89%AF%E5%BF%83%E6%8E%A8%E8%8D%90/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/11/21/%E8%89%AF%E5%BF%83%E6%8E%A8%E8%8D%90/</guid>
+      <guid>/post/%E8%89%AF%E5%BF%83%E6%8E%A8%E8%8D%90/</guid>
       <description>MS软件激活工具包，绝对是良心中的良心！ 这么多年，我们一直用它！ 亦是美网络</description>
-    </item>
-    
-    <item>
-      <title>文献整理</title>
-      <link>/2019/11/12/%E6%96%87%E7%8C%AE%E6%95%B4%E7%90%86/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/11/12/%E6%96%87%E7%8C%AE%E6%95%B4%E7%90%86/</guid>
-      <description>坚定决心，所有文献向ENDNOTE转移！</description>
-    </item>
-    
-    <item>
-      <title>还是做了一些工作的</title>
-      <link>/2019/11/08/%E8%BF%98%E6%98%AF%E5%81%9A%E4%BA%86%E4%B8%80%E4%BA%9B%E5%B7%A5%E4%BD%9C%E7%9A%84/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/11/08/%E8%BF%98%E6%98%AF%E5%81%9A%E4%BA%86%E4%B8%80%E4%BA%9B%E5%B7%A5%E4%BD%9C%E7%9A%84/</guid>
-      <description>截至2019年11月8日
-投稿5次，分属5个不同的期刊
-审稿4.5次
-收到大修3次，并全部回复
-接收1篇</description>
-    </item>
-    
-    <item>
-      <title>感谢云哲</title>
-      <link>/2019/11/04/%E6%84%9F%E8%B0%A2%E4%BA%91%E5%93%B2/</link>
-      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/11/04/%E6%84%9F%E8%B0%A2%E4%BA%91%E5%93%B2/</guid>
-      <description>附庸风雅的我嗷~
-喜欢海纳百川。</description>
-    </item>
-    
-    <item>
-      <title>投了投了</title>
-      <link>/2019/08/16/%E6%8A%95%E4%BA%86%E6%8A%95%E4%BA%86/</link>
-      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/08/16/%E6%8A%95%E4%BA%86%E6%8A%95%E4%BA%86/</guid>
-      <description>虽然没赶上618，但是我赶上了816啊！
-都是电商的好日子。
-双11会发生些什么呢？也许什么都不会发生。</description>
-    </item>
-    
-    <item>
-      <title>鸽了鸽了</title>
-      <link>/2019/06/18/%E9%B8%BD%E4%BA%86%E9%B8%BD%E4%BA%86/</link>
-      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/06/18/%E9%B8%BD%E4%BA%86%E9%B8%BD%E4%BA%86/</guid>
-      <description>618投稿的愿望注定要破灭了。
-第一篇论文投稿时间也不是我一个人能确定的啊！
-鸽就鸽了……</description>
-    </item>
-    
-    <item>
-      <title>新年好</title>
-      <link>/2019/01/01/%E6%96%B0%E5%B9%B4%E5%A5%BD/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/01/01/%E6%96%B0%E5%B9%B4%E5%A5%BD/</guid>
-      <description>新年好！
-夜游玄武湖，2018年最后悔的事就是来南京。
-今天有两个消息八卦，失恋和失恋。
-想到一句歌词，想失恋却没有目标。</description>
-    </item>
-    
-    <item>
-      <title>喝了酒的师兄贼帅2</title>
-      <link>/2018/10/30/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%852/</link>
-      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/10/30/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%852/</guid>
-      <description>酒真的没白喝！</description>
-    </item>
-    
-    <item>
-      <title>尊重博士</title>
-      <link>/2018/10/30/%E5%B0%8A%E9%87%8D%E5%8D%9A%E5%A3%AB/</link>
-      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/10/30/%E5%B0%8A%E9%87%8D%E5%8D%9A%E5%A3%AB/</guid>
-      <description>博士都不容易呀，尤其是女博士，没法谈恋爱，都27了。
-男博士也不容易，头发都没了。
-日以继夜，没日没夜，一周七天，感悟文献。</description>
-    </item>
-    
-    <item>
-      <title>喝了酒的师兄贼帅</title>
-      <link>/2018/10/28/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%85/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/10/28/%E5%96%9D%E4%BA%86%E9%85%92%E7%9A%84%E5%B8%88%E5%85%84%E8%B4%BC%E5%B8%85/</guid>
-      <description>酒是个好东西呀！</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Sat, 20 Oct 2018 20:57:00 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>欢迎光临，这是个人的Blog，随机不定时看心情更新。
-扫描二维码可关注公众号！</description>
     </item>
     
   </channel>
