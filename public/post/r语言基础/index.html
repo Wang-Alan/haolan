@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="R语言基础">
+<meta itemprop="description" content="提纲1. 如何读取数据2. 如何写入数据3. 数据格式与转化4. 数据框`data.frame`操作5. 当前工作目录1. 如何读取数据最基础函数 read.table()read.table(file, header = FALSE, sep =&quot;&quot;, quote = &quot;\&quot;&#39;&quot;, dec = &quot;.&quot;, row.names, col.names, as.is = !stringsAsFactors, na.strings = &quot;NA&quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &quot;#&quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &quot;&quot;, encoding = &quot;unknown&quot;, text）参数解释：">
+
+
+<meta itemprop="datePublished" content="2020-02-14T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-14T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="663">
+
+
+
+<meta itemprop="keywords" content="R语言," />
+<meta property="og:title" content="R语言基础" />
+<meta property="og:description" content="提纲1. 如何读取数据2. 如何写入数据3. 数据格式与转化4. 数据框`data.frame`操作5. 当前工作目录1. 如何读取数据最基础函数 read.table()read.table(file, header = FALSE, sep =&quot;&quot;, quote = &quot;\&quot;&#39;&quot;, dec = &quot;.&quot;, row.names, col.names, as.is = !stringsAsFactors, na.strings = &quot;NA&quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &quot;#&quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &quot;&quot;, encoding = &quot;unknown&quot;, text）参数解释：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/r%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" />
+<meta property="article:published_time" content="2020-02-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-14T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="R语言基础"/>
+<meta name="twitter:description" content="提纲1. 如何读取数据2. 如何写入数据3. 数据格式与转化4. 数据框`data.frame`操作5. 当前工作目录1. 如何读取数据最基础函数 read.table()read.table(file, header = FALSE, sep =&quot;&quot;, quote = &quot;\&quot;&#39;&quot;, dec = &quot;.&quot;, row.names, col.names, as.is = !stringsAsFactors, na.strings = &quot;NA&quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &quot;#&quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &quot;&quot;, encoding = &quot;unknown&quot;, text）参数解释："/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>R语言基础</title>
+	<link rel="stylesheet" href="/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="/">Haolan&#39;s Website</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="/post/">Contents</a>
+				<a href="/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/Wang-Alan" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="/post/">Contents</a></li>
+			<li><a href="/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>R语言基础</h1>
+		<div class="content">
+			
+
+
+<div id="提纲" class="section level2">
+<h2>提纲</h2>
+<pre><code>1. 如何读取数据
+2. 如何写入数据
+3. 数据格式与转化
+4. 数据框`data.frame`操作
+5. 当前工作目录</code></pre>
+</div>
+<div id="如何读取数据" class="section level2">
+<h2>1. 如何读取数据</h2>
+<div id="最基础函数-read.table" class="section level3">
+<h3>最基础函数 <code>read.table()</code></h3>
+<pre class="r"><code>read.table(file, header = FALSE, sep =&quot;&quot;, quote = &quot;\&quot;&#39;&quot;, dec = &quot;.&quot;,  row.names, col.names, as.is = !stringsAsFactors, na.strings = &quot;NA&quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &quot;#&quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &quot;&quot;, encoding = &quot;unknown&quot;, text）</code></pre>
+<p>参数解释：</p>
+<ul>
+<li><code>file</code>要读取的文件。<code>file</code>可以是：
+<ul>
+<li>绝对路径或者相对路径</li>
+<li>使用<code>file.choose()</code>，弹出对话框选择文件位置。强烈推荐</li>
+</ul></li>
+<li><code>header</code>来确定数据文件中第一行是不是标题。默认F，即认为数据文件没有标题，也即认为第一行就开始是数据</li>
+<li><code>sep</code>指定分隔符，默认是空格</li>
+<li><code>quote</code>是引号，默认就是双引号</li>
+<li><code>dec</code>小数点的表示，默认就是一个点</li>
+<li><code>skip</code>确定是否跳过某些行</li>
+<li><code>strip.white</code>确定是否消除空白字符</li>
+<li><code>blank.lines.skip</code>确定是否跳过空白行</li>
+<li><code>comment.char</code>指定用于表示注释的引导符号</li>
+</ul>
+<p>简化形式为：</p>
+<pre class="r"><code>read.table(file = file.choose(), header = 1, row.name = 1, sep = &#39;\t&#39;)</code></pre>
+</div>
+<div id="read.csv函数但不常用" class="section level3">
+<h3><code>read.csv</code>函数，但不常用</h3>
+<p>和<code>read.table</code>有所不同的，是<code>read.csv</code>的默认参数有别。注意，header和sep的默认值。</p>
+<pre class="r"><code>read.csv(file, header = TRUE, sep = &quot;,&quot;, quote=&quot;\&quot;&quot;, dec=&quot;.&quot;, fill = TRUE, comment.char=&quot;&quot;)</code></pre>
+<p>参数解释：</p>
+<ul>
+<li>因为csv就是逗号分割的意思，当然<code>sep</code>必须是逗号。</li>
+<li><code>header</code>也是默认有标题的。</li>
+<li><code>fill</code>是默认填充的，即遇到行不相等的情况，空白域自动添加既定值。</li>
+</ul>
+</div>
+</div>
+<div id="如何写入数据" class="section level2">
+<h2>2. 如何写入数据</h2>
+<div id="保存为简单文本write.table" class="section level3">
+<h3>保存为简单文本<code>write.table</code></h3>
+<pre class="r"><code>write.table(x, file = &quot;&quot;, append = FALSE, quote = TRUE, sep = &quot; &quot;, eol = &quot;\n&quot;, na = &quot;NA&quot;, dec = &quot;.&quot;, row.names = TRUE, col.names = TRUE, qmethod = c(&quot;escape&quot;, &quot;double&quot;), fileEncoding = &quot;&quot;) </code></pre>
+<p>参数解释：</p>
+<p><code>quote</code>
+a logical value (TRUE or FALSE) or a numeric vector.
+- If TRUE, any character or factor columns will be surrounded by double quotes. If a numeric vector, its elements are taken as the indices of columns to quote. In both cases, row and column names are quoted if they are written.
+- If FALSE, nothing is quoted.</p>
+<p>例如：</p>
+<p>创建数据框d</p>
+<pre class="r"><code>d &lt;- data.frame(obs = c(1, 2, 3), treat = c(&quot;A&quot;, &quot;B&quot;, &quot;A&quot;), weight = c(2.3, NA, 9)) </code></pre>
+<p>保存为tab 分隔的简单文本</p>
+<pre class="r"><code>write.table(d, file = &quot;output.txt&quot;, row.names = F, col.names = T, quote = F, sep=&quot;\t&quot;)</code></pre>
+</div>
+<div id="保存为r格式文件" class="section level3">
+<h3>保存为R格式文件</h3>
+<pre class="r"><code>save(d, file = &quot;c:/data/output.Rdata&quot;)</code></pre>
+</div>
+</div>
+<div id="数据格式与转化" class="section level2">
+<h2>3. 数据格式与转化</h2>
+<p>判断</p>
+<p><code>is.numeric()</code>, <code>is.character()</code>, <code>is.vector()</code>, <code>is.matrix()</code>, <code>is.data.frame()</code></p>
+<p>转换</p>
+<p><code>as.numeric()</code>, <code>as.character()</code>, <code>as.vector()</code>, <code>as.matrix()</code>, <code>as.data.frame()</code></p>
+</div>
+<div id="数据框data.frame操作" class="section level2">
+<h2>4. 数据框data.frame操作</h2>
+<p>用R语言做数据分析最重要的数据格式。</p>
+<div id="创建" class="section level3">
+<h3>创建</h3>
+<p>方法1</p>
+<pre class="r"><code>a &lt;- c(1,2,3)
+b &lt;- c(11,22,33)
+d &lt;- data.frame(a,b)
+d</code></pre>
+<pre><code>##   a  b
+## 1 1 11
+## 2 2 22
+## 3 3 33</code></pre>
+<p>方法2</p>
+<pre class="r"><code>m &lt;- matrix(c(1:10),ncol=2)
+d &lt;-data.frame(m)
+d</code></pre>
+<pre><code>##   X1 X2
+## 1  1  6
+## 2  2  7
+## 3  3  8
+## 4  4  9
+## 5  5 10</code></pre>
+<p>方法3</p>
+<pre class="r"><code>d &lt;- data.frame(a = c(1,2,3), b = c(11,22,33), row.names = c(&#39;one&#39;,&#39;two&#39;,&#39;three&#39;))
+d</code></pre>
+<pre><code>##       a  b
+## one   1 11
+## two   2 22
+## three 3 33</code></pre>
+</div>
+<div id="访问" class="section level3">
+<h3>访问</h3>
+<p><code>d[[index]]</code> 访问第<code>index</code>列</p>
+<p><code>d[[index1, index2]]</code> 访问第<code>index1</code>行，第<code>index2</code>列</p>
+<p><code>d[[index1:index2]]</code> 访问第<code>index1</code>列，第<code>index2</code>行</p>
+<pre class="r"><code>d[[1]]</code></pre>
+<pre><code>## [1] 1 2 3</code></pre>
+<pre class="r"><code>d[[1,2]]</code></pre>
+<pre><code>## [1] 11</code></pre>
+<pre class="r"><code>d[[1:2]]</code></pre>
+<pre><code>## [1] 2</code></pre>
+<p><code>d$column_name</code> 访问<code>column_name</code>列，如果有<code>na</code>那么可以用<code>na.omit</code>去除<code>na</code>值，然后访问</p>
+<pre class="r"><code>d$a</code></pre>
+<pre><code>## [1] 1 2 3</code></pre>
+<p><code>d[,index]</code> 访问第<code>index</code>列</p>
+<pre class="r"><code>d[,2]</code></pre>
+<pre><code>## [1] 11 22 33</code></pre>
+<p><code>d[index,]</code> 访问第<code>index</code>行</p>
+<pre class="r"><code>d[2,]</code></pre>
+<pre><code>##     a  b
+## two 2 22</code></pre>
+<p><code>d[index1:index2]</code> 对<code>data.frame</code>提取<code>index1</code>列到<code>index2</code>列来构成子<code>data.frame</code></p>
+</div>
+<div id="修改" class="section level3">
+<h3>修改</h3>
+<p>修改行名或列名</p>
+<pre class="r"><code>names(d)&lt;-c(&quot;one&quot;,&quot;two&quot;) # 此时列名会变成one、two
+row.names(d)&lt;-c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;) # 此时行名会变成a、b、c
+d</code></pre>
+<pre><code>##   one two
+## a   1  11
+## b   2  22
+## c   3  33</code></pre>
+</div>
+<div id="增加" class="section level3">
+<h3>增加</h3>
+<p><code>rbind</code> 增加行
+<code>cbind</code> 增加列
+<code>d$newColumn&lt;-c(aaa,bbb)</code> 增加一个名为<code>newColumn</code>的列</p>
+<pre class="r"><code># 创建
+m &lt;- matrix(c(1:10),ncol=2)
+d &lt;- data.frame(m)
+d</code></pre>
+<pre><code>##   X1 X2
+## 1  1  6
+## 2  2  7
+## 3  3  8
+## 4  4  9
+## 5  5 10</code></pre>
+<pre class="r"><code># 增加行
+d &lt;- rbind(d,c(11,12))
+d </code></pre>
+<pre><code>##   X1 X2
+## 1  1  6
+## 2  2  7
+## 3  3  8
+## 4  4  9
+## 5  5 10
+## 6 11 12</code></pre>
+<pre class="r"><code># 增加列
+d &lt;- cbind(d,13:18)
+d </code></pre>
+<pre><code>##   X1 X2 13:18
+## 1  1  6    13
+## 2  2  7    14
+## 3  3  8    15
+## 4  4  9    16
+## 5  5 10    17
+## 6 11 12    18</code></pre>
+<pre class="r"><code># 增加列
+d$new &lt;- c(1,2,3,4,5,6)
+d </code></pre>
+<pre><code>##   X1 X2 13:18 new
+## 1  1  6    13   1
+## 2  2  7    14   2
+## 3  3  8    15   3
+## 4  4  9    16   4
+## 5  5 10    17   5
+## 6 11 12    18   6</code></pre>
+</div>
+<div id="合并" class="section level3">
+<h3>合并</h3>
+<p><code>merge</code> 合并两个<code>data.frame</code></p>
+<pre class="r"><code>a &lt;- data.frame(c1 = c(1,2,3),c2 = c(4,5,6))
+a</code></pre>
+<pre><code>##   c1 c2
+## 1  1  4
+## 2  2  5
+## 3  3  6</code></pre>
+<pre class="r"><code>b &lt;- data.frame(c1 = c(11,22,33),c2 = c(41,52,63))
+b</code></pre>
+<pre><code>##   c1 c2
+## 1 11 41
+## 2 22 52
+## 3 33 63</code></pre>
+<pre class="r"><code>c &lt;- merge(a,b)
+c</code></pre>
+<pre><code>## [1] c1 c2
+## &lt;0 行&gt; (或0-长度的row.names)</code></pre>
+</div>
+<div id="删除" class="section level3">
+<h3>删除</h3>
+<p>删除某一行或者列</p>
+<pre class="r"><code>d &lt;- d[-1,]
+d &lt;- d[,-2]</code></pre>
+<p>有条件删除某一行或者列(下一篇博文)</p>
+</div>
+</div>
+<div id="当前工作目录" class="section level2">
+<h2>5. 当前工作目录</h2>
+<p><code>getwd()</code>获取当前工作文件夹所在位置</p>
+<p><code>setwd()</code>转变当前工作文件路径为指定路径</p>
+<p><code>dir.create()</code>创建路径</p>
+</div>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="/">Wang Haolan</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

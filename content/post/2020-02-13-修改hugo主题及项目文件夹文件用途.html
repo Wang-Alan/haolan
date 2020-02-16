@@ -1,0 +1,37 @@
+---
+title: 修改Hugo主题及项目文件夹文件用途
+author: whl
+date: '2020-02-13'
+slug: 修改hugo主题及项目文件夹文件用途
+categories:
+  - 个人
+tags:
+  - R语言
+comments: no
+images: ~
+---
+
+
+
+<div id="修改hugo主题" class="section level2">
+<h2>修改hugo主题</h2>
+<ol style="list-style-type: decimal">
+<li>挑选喜欢的主题hermit（主题名）并下载</li>
+<li>讲<code>themes\hermit\exampleSite</code>下的<code>config.toml</code>拷贝到项目文件夹</li>
+<li>修改<code>config.toml</code>文件配置网站</li>
+<li>运行<code>blogdown::serve_site()</code></li>
+</ol>
+</div>
+<div id="项目文件夹文件用途" class="section level2">
+<h2>项目文件夹文件用途</h2>
+<ul>
+<li>config.toml：项目的配置文件，也可以是<code>config.yaml</code>，不同的主题可能不一样</li>
+<li>content/post：此文件夹下包含<code>.rmd</code>格式文件，<code>.html</code>格式文件和文件夹
+<ul>
+<li>.rmd格式文件：博文内容</li>
+<li>.html格式文件和文件夹：由<code>.rmd</code>格式文件生成；文件夹为资源文件，如图片</li>
+</ul></li>
+<li>static：存放<code>.rmd</code>文件的资源文件，如图片</li>
+<li>其他文件或文件夹是hugo根据<code>config.toml</code>和<code>content</code>自动生成的，直接部署即可</li>
+</ul>
+</div>

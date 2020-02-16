@@ -1,0 +1,238 @@
+---
+title: R语言基础
+author: whl
+date: '2020-02-14'
+slug: r语言基础
+categories:
+  - 个人
+tags:
+  - R语言
+comments: no
+images: ~
+---
+## 提纲
+	1. 如何读取数据
+	2. 如何写入数据
+	3. 数据格式与转化
+	4. 数据框`data.frame`操作
+	5. 当前工作目录
+
+## 1. 如何读取数据
+
+### 最基础函数 `read.table()`
+
+```r
+read.table(file, header = FALSE, sep ="", quote = "\"'", dec = ".",  row.names, col.names, as.is = !stringsAsFactors, na.strings = "NA", colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = "#", allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = "", encoding = "unknown", text）
+```
+
+参数解释：
+
+- `file`要读取的文件。`file`可以是：
+  - 绝对路径或者相对路径
+  - 使用`file.choose()`，弹出对话框选择文件位置。强烈推荐
+- `header`来确定数据文件中第一行是不是标题。默认F，即认为数据文件没有标题，也即认为第一行就开始是数据
+- `sep`指定分隔符，默认是空格
+- `quote`是引号，默认就是双引号
+- `dec`小数点的表示，默认就是一个点
+- `skip`确定是否跳过某些行
+- `strip.white`确定是否消除空白字符
+- `blank.lines.skip`确定是否跳过空白行
+- `comment.char`指定用于表示注释的引导符号
+
+简化形式为：
+
+```r
+read.table(file = file.choose(), header = 1, row.name = 1, sep = '\t')
+```
+
+### `read.csv`函数，但不常用
+
+和`read.table`有所不同的，是`read.csv`的默认参数有别。注意，header和sep的默认值。
+
+```r
+read.csv(file, header = TRUE, sep = ",", quote="\"", dec=".", fill = TRUE, comment.char="")
+```
+
+参数解释：
+
+- 因为csv就是逗号分割的意思，当然`sep`必须是逗号。
+- `header`也是默认有标题的。
+- `fill`是默认填充的，即遇到行不相等的情况，空白域自动添加既定值。
+
+## 2. 如何写入数据
+
+### 保存为简单文本`write.table`
+
+```r
+write.table(x, file = "", append = FALSE, quote = TRUE, sep = " ", eol = "\n", na = "NA", dec = ".", row.names = TRUE, col.names = TRUE, qmethod = c("escape", "double"), fileEncoding = "") 
+```
+
+参数解释：
+
+`quote`	
+a logical value (TRUE or FALSE) or a numeric vector. 
+- If TRUE, any character or factor columns will be surrounded by double quotes. If a numeric vector, its elements are taken as the indices of columns to quote. In both cases, row and column names are quoted if they are written. 
+- If FALSE, nothing is quoted.
+
+例如：
+
+创建数据框d
+
+```{r}
+d <- data.frame(obs = c(1, 2, 3), treat = c("A", "B", "A"), weight = c(2.3, NA, 9)) 
+```
+
+保存为tab 分隔的简单文本
+
+```r
+write.table(d, file = "output.txt", row.names = F, col.names = T, quote = F, sep="\t")
+```	
+	
+### 保存为R格式文件
+
+```r
+save(d, file = "c:/data/output.Rdata")
+```
+	
+## 3. 数据格式与转化
+	
+判断
+
+`is.numeric()`, `is.character()`, `is.vector()`, `is.matrix()`, `is.data.frame()`
+	
+转换
+
+`as.numeric()`, `as.character()`, `as.vector()`, `as.matrix()`, `as.data.frame()`
+		
+## 4. 数据框data.frame操作
+
+用R语言做数据分析最重要的数据格式。
+	
+### 创建
+
+方法1
+
+```{r}
+a <- c(1,2,3)
+b <- c(11,22,33)
+d <- data.frame(a,b)
+d
+```	
+
+方法2
+
+```{r}
+m <- matrix(c(1:10),ncol=2)
+d <-data.frame(m)
+d
+```
+
+方法3
+
+```{r}
+d <- data.frame(a = c(1,2,3), b = c(11,22,33), row.names = c('one','two','three'))
+d
+```	
+
+### 访问
+
+`d[[index]]` 访问第`index`列
+
+`d[[index1, index2]]` 访问第`index1`行，第`index2`列
+
+`d[[index1:index2]]` 访问第`index1`列，第`index2`行
+
+```{r}
+d[[1]]
+d[[1,2]]
+d[[1:2]]
+```
+
+`d$column_name` 访问`column_name`列，如果有`na`那么可以用`na.omit`去除`na`值，然后访问
+
+```{r}
+d$a
+```
+
+`d[,index]` 访问第`index`列
+
+```{r}
+d[,2]
+```
+
+`d[index,]` 访问第`index`行
+
+```{r}
+d[2,]
+```
+
+`d[index1:index2]` 对`data.frame`提取`index1`列到`index2`列来构成子`data.frame`
+	
+### 修改
+
+修改行名或列名
+
+```	{r}
+names(d)<-c("one","two") # 此时列名会变成one、two
+row.names(d)<-c("a","b","c") # 此时行名会变成a、b、c
+d
+```
+
+### 增加
+
+`rbind` 增加行
+`cbind` 增加列
+`d$newColumn<-c(aaa,bbb)` 增加一个名为`newColumn`的列
+
+```{r}
+# 创建
+m <- matrix(c(1:10),ncol=2)
+d <- data.frame(m)
+d
+```	
+```{r}
+# 增加行
+d <- rbind(d,c(11,12))
+d 
+```
+```{r}
+# 增加列
+d <- cbind(d,13:18)
+d 
+```
+```{r}
+# 增加列
+d$new <- c(1,2,3,4,5,6)
+d 
+```
+### 合并
+`merge` 合并两个`data.frame`
+
+```{r}
+a <- data.frame(c1 = c(1,2,3),c2 = c(4,5,6))
+a
+b <- data.frame(c1 = c(11,22,33),c2 = c(41,52,63))
+b
+c <- merge(a,b)
+c
+```
+	
+### 删除
+
+删除某一行或者列
+
+```r
+d <- d[-1,]
+d <- d[,-2]
+```
+
+有条件删除某一行或者列(下一篇博文)
+
+## 5. 当前工作目录
+
+`getwd()`获取当前工作文件夹所在位置
+
+`setwd()`转变当前工作文件路径为指定路径
+
+`dir.create()`创建路径
+

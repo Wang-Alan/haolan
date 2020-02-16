@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R语言 on Haolan&#39;s Website</title>
+    <link>/tags/r%E8%AF%AD%E8%A8%80/</link>
+    <description>Recent content in R语言 on Haolan&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R语言基础</title>
+      <link>/post/r%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/r%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</guid>
+      <description>提纲1. 如何读取数据2. 如何写入数据3. 数据格式与转化4. 数据框`data.frame`操作5. 当前工作目录1. 如何读取数据最基础函数 read.table()read.table(file, header = FALSE, sep =&amp;quot;&amp;quot;, quote = &amp;quot;\&amp;quot;&amp;#39;&amp;quot;, dec = &amp;quot;.&amp;quot;, row.names, col.names, as.is = !stringsAsFactors, na.strings = &amp;quot;NA&amp;quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &amp;quot;#&amp;quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &amp;quot;&amp;quot;, encoding = &amp;quot;unknown&amp;quot;, text）参数解释：</description>
+    </item>
+    
+    <item>
+      <title>修改Hugo主题及项目文件夹文件用途</title>
+      <link>/post/%E4%BF%AE%E6%94%B9hugo%E4%B8%BB%E9%A2%98%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E6%96%87%E4%BB%B6%E7%94%A8%E9%80%94/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E4%BF%AE%E6%94%B9hugo%E4%B8%BB%E9%A2%98%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E6%96%87%E4%BB%B6%E7%94%A8%E9%80%94/</guid>
+      <description>修改hugo主题挑选喜欢的主题hermit（主题名）并下载讲themes\hermit\exampleSite下的config.toml拷贝到项目文件夹修改config.toml文件配置网站运行blogdown::serve_site()项目文件夹文件用途config.toml：项目的配置文件，也可以是config.yaml，不同的主题可能不一样content/post：此文件夹下包含.rmd格式文件，.html格式文件和文件夹.rmd格式文件：博文内容.html格式文件和文件夹：由.rmd格式文件生成；文件夹为资源文件，如图片static：存放.rmd文件的资源文件，如图片其他文件或文件夹是hugo根据config.toml和content自动生成的，直接部署即可</description>
+    </item>
+    
+  </channel>
+</rss>

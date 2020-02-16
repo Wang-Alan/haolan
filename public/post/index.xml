@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R语言基础</title>
+      <link>/post/r%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/r%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</guid>
+      <description>提纲1. 如何读取数据2. 如何写入数据3. 数据格式与转化4. 数据框`data.frame`操作5. 当前工作目录1. 如何读取数据最基础函数 read.table()read.table(file, header = FALSE, sep =&amp;quot;&amp;quot;, quote = &amp;quot;\&amp;quot;&amp;#39;&amp;quot;, dec = &amp;quot;.&amp;quot;, row.names, col.names, as.is = !stringsAsFactors, na.strings = &amp;quot;NA&amp;quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &amp;quot;#&amp;quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &amp;quot;&amp;quot;, encoding = &amp;quot;unknown&amp;quot;, text）参数解释：</description>
+    </item>
+    
+    <item>
+      <title>修改Hugo主题及项目文件夹文件用途</title>
+      <link>/post/%E4%BF%AE%E6%94%B9hugo%E4%B8%BB%E9%A2%98%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E6%96%87%E4%BB%B6%E7%94%A8%E9%80%94/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E4%BF%AE%E6%94%B9hugo%E4%B8%BB%E9%A2%98%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E6%96%87%E4%BB%B6%E7%94%A8%E9%80%94/</guid>
+      <description>修改hugo主题挑选喜欢的主题hermit（主题名）并下载讲themes\hermit\exampleSite下的config.toml拷贝到项目文件夹修改config.toml文件配置网站运行blogdown::serve_site()项目文件夹文件用途config.toml：项目的配置文件，也可以是config.yaml，不同的主题可能不一样content/post：此文件夹下包含.rmd格式文件，.html格式文件和文件夹.rmd格式文件：博文内容.html格式文件和文件夹：由.rmd格式文件生成；文件夹为资源文件，如图片static：存放.rmd文件的资源文件，如图片其他文件或文件夹是hugo根据config.toml和content自动生成的，直接部署即可</description>
+    </item>
     
     <item>
       <title>问个问题</title>
@@ -111,29 +129,6 @@ PPT的实质应该就是提纲，以及必要的演示内容。如果我能把�
 文章没改完的我不配在火车上看电影，尤其是还坐在老师旁边。
 同时，老师还批评了我开会晚上回去不知道改文章。虽然28日到长沙，当日晚讨论了第二天听会听什么;次日29日晚，讨论了听了这一天会的收获与基金写法；再次日晚30日，去吃了宵夜；31日晚返程南京。但这都不是借口，我或许应该会议期间找时间改完的。
 深受启发，谨以此文留念。</description>
-    </item>
-    
-    <item>
-      <title>同时处理多项事务的能力</title>
-      <link>/post/%E5%90%8C%E6%97%B6%E5%A4%84%E7%90%86%E5%A4%9A%E9%A1%B9%E4%BA%8B%E5%8A%A1%E7%9A%84%E8%83%BD%E5%8A%9B/</link>
-      <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E5%90%8C%E6%97%B6%E5%A4%84%E7%90%86%E5%A4%9A%E9%A1%B9%E4%BA%8B%E5%8A%A1%E7%9A%84%E8%83%BD%E5%8A%9B/</guid>
-      <description>这个能力提出的背景是在某会议筹备期间，我被课题组分配了一些工作，我积极工作，直至会议开幕前夜，准备工作基本完成，晚上在酒店吃自助餐的时候，老师对我进行了指导：
-首先，还是举例子，还是那位优秀的phD student，偶尔做一些有关项目的工作，但是在项目工作正常进行的同时，他自己的科研仍然没有拉下，该完成的模型计算依然顺利完成。而我写基金的几个关键点，却迟迟不能确定。于是，对我进行了指导。
-这个能力的定义：即使要做其他事情，科研不能拉下。为课题组做的工作，并不是自己科研进展慢的理由和借口，而是因为同时处理多项事务的能力没有学会。深受启发，谨以此文留念。
-所谓写基金的关键点迟迟不能确定，我对自己的工作反思如下：
-11月8日前一直在改文章11月12日给做弯的老师汇报，需要准备ppt11月16日组会结束，被分配要进行一些会议准备工作11月20日考察游船路线半天11月21日测试设备半天11月22日测试设备半天截至今日，考虑基金的工作日共计8天，我居然没有进展！
-愧对老师的指导，努力，奋斗！</description>
-    </item>
-    
-    <item>
-      <title>良心推荐</title>
-      <link>/post/%E8%89%AF%E5%BF%83%E6%8E%A8%E8%8D%90/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E8%89%AF%E5%BF%83%E6%8E%A8%E8%8D%90/</guid>
-      <description>MS软件激活工具包，绝对是良心中的良心！ 这么多年，我们一直用它！ 亦是美网络</description>
     </item>
     
   </channel>

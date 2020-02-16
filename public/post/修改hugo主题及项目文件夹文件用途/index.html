@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="修改Hugo主题及项目文件夹文件用途">
+<meta itemprop="description" content="修改hugo主题挑选喜欢的主题hermit（主题名）并下载讲themes\hermit\exampleSite下的config.toml拷贝到项目文件夹修改config.toml文件配置网站运行blogdown::serve_site()项目文件夹文件用途config.toml：项目的配置文件，也可以是config.yaml，不同的主题可能不一样content/post：此文件夹下包含.rmd格式文件，.html格式文件和文件夹.rmd格式文件：博文内容.html格式文件和文件夹：由.rmd格式文件生成；文件夹为资源文件，如图片static：存放.rmd文件的资源文件，如图片其他文件或文件夹是hugo根据config.toml和content自动生成的，直接部署即可">
+
+
+<meta itemprop="datePublished" content="2020-02-13T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-13T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="12">
+
+
+
+<meta itemprop="keywords" content="R语言," />
+<meta property="og:title" content="修改Hugo主题及项目文件夹文件用途" />
+<meta property="og:description" content="修改hugo主题挑选喜欢的主题hermit（主题名）并下载讲themes\hermit\exampleSite下的config.toml拷贝到项目文件夹修改config.toml文件配置网站运行blogdown::serve_site()项目文件夹文件用途config.toml：项目的配置文件，也可以是config.yaml，不同的主题可能不一样content/post：此文件夹下包含.rmd格式文件，.html格式文件和文件夹.rmd格式文件：博文内容.html格式文件和文件夹：由.rmd格式文件生成；文件夹为资源文件，如图片static：存放.rmd文件的资源文件，如图片其他文件或文件夹是hugo根据config.toml和content自动生成的，直接部署即可" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/%E4%BF%AE%E6%94%B9hugo%E4%B8%BB%E9%A2%98%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E6%96%87%E4%BB%B6%E7%94%A8%E9%80%94/" />
+<meta property="article:published_time" content="2020-02-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-13T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="修改Hugo主题及项目文件夹文件用途"/>
+<meta name="twitter:description" content="修改hugo主题挑选喜欢的主题hermit（主题名）并下载讲themes\hermit\exampleSite下的config.toml拷贝到项目文件夹修改config.toml文件配置网站运行blogdown::serve_site()项目文件夹文件用途config.toml：项目的配置文件，也可以是config.yaml，不同的主题可能不一样content/post：此文件夹下包含.rmd格式文件，.html格式文件和文件夹.rmd格式文件：博文内容.html格式文件和文件夹：由.rmd格式文件生成；文件夹为资源文件，如图片static：存放.rmd文件的资源文件，如图片其他文件或文件夹是hugo根据config.toml和content自动生成的，直接部署即可"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>修改Hugo主题及项目文件夹文件用途</title>
+	<link rel="stylesheet" href="/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="/">Haolan&#39;s Website</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="/post/">Contents</a>
+				<a href="/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/Wang-Alan" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="/post/">Contents</a></li>
+			<li><a href="/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>修改Hugo主题及项目文件夹文件用途</h1>
+		<div class="content">
+			
+
+
+<div id="修改hugo主题" class="section level2">
+<h2>修改hugo主题</h2>
+<ol style="list-style-type: decimal">
+<li>挑选喜欢的主题hermit（主题名）并下载</li>
+<li>讲<code>themes\hermit\exampleSite</code>下的<code>config.toml</code>拷贝到项目文件夹</li>
+<li>修改<code>config.toml</code>文件配置网站</li>
+<li>运行<code>blogdown::serve_site()</code></li>
+</ol>
+</div>
+<div id="项目文件夹文件用途" class="section level2">
+<h2>项目文件夹文件用途</h2>
+<ul>
+<li>config.toml：项目的配置文件，也可以是<code>config.yaml</code>，不同的主题可能不一样</li>
+<li>content/post：此文件夹下包含<code>.rmd</code>格式文件，<code>.html</code>格式文件和文件夹
+<ul>
+<li>.rmd格式文件：博文内容</li>
+<li>.html格式文件和文件夹：由<code>.rmd</code>格式文件生成；文件夹为资源文件，如图片</li>
+</ul></li>
+<li>static：存放<code>.rmd</code>文件的资源文件，如图片</li>
+<li>其他文件或文件夹是hugo根据<code>config.toml</code>和<code>content</code>自动生成的，直接部署即可</li>
+</ul>
+</div>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="/">Wang Haolan</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
