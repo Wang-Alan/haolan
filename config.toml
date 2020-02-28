@@ -71,11 +71,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [menu]
 
   [[menu.main]]
-    name = "Contents"
+    name = "博文"
     url = "post/"
     weight = 1
 
   [[menu.main]]
-    name = "About"
+    name = "关于"
     url = "about/"
     weight = 2
