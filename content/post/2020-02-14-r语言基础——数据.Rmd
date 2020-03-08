@@ -181,7 +181,9 @@ d
 ### 增加
 
 `rbind` 增加行
+
 `cbind` 增加列
+
 `d$newColumn<-c(aaa,bbb)` 增加一个名为`newColumn`的列
 
 ```{r}
@@ -208,6 +210,8 @@ d
 ### 合并
 `merge` 合并两个`data.frame`
 
+也可以用`cbind`或`rbind`合并`data.frame`，但是需要保证`data,frame`的维度和名称（行或者列）完全一致，否则会报错
+
 ```{r}
 a <- data.frame(c1 = c(1,2,3),c2 = c(4,5,6))
 a
@@ -226,7 +230,43 @@ d <- d[-1,]
 d <- d[,-2]
 ```
 
-有条件删除某一行或者列(下一篇博文)
+### 获取子data.frame
+
+- 方法一：创建查询列表，提取
+- 方法二：使用 `subset` 函数
+
+例如：
+
+```{r}
+d <- data.frame(obs = c(1, 2, 3), treat = c("A", "B", "A"), weight = c(2.3, NA, 9)) 
+row.names(d) <- c('rname1', 'rname2', 'rname3')
+head(d)
+# 方法一
+# 获取行名为rname1和rname2的子data.frame
+sub_d <- d[c('rname1', 'rname2'),]
+head(sub_d)
+# 获取列名为obs和treat的子data.frame
+sub_d <- d[c('obs', 'treat')]
+head(sub_d)
+#方法二
+# 获取列名为obs和treat的子data.frame
+sub_d <- subset(d, select = c('obs', 'treat'))
+head(sub_d)
+sub_d <- subset(d, select = -weight)
+head(sub_d)
+```
+
+补充
+
+```
+subset(x, subset, select)
+```
+
+参数解释：
+
+- `x`：要操作的`data.frame`
+- `subset`：逻辑表达式，一般是“列名-逻辑运算符-值”，如`Temp > 80`，默认是`False`
+- `select`：子`data.frame`**包含列的列名**或**删除列的列名**
 
 ## 5. 当前工作目录
 
