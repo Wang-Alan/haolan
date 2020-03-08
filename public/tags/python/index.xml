@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Haolan&#39;s Website</title>
+    <link>/tags/python/</link>
+    <description>Recent content in Python on Haolan&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ADCP数据处理思路</title>
+      <link>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</guid>
+      <description>ADCP数据的处理思路 数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
+我们常用的变量包括：
+  水深 River Depth [m]
+  平均流速 Mean River Velocity (Ref: BT) [m/s]
+  速度
+ 东向速度 East Velocity (Ref: BT) [m/s] 北向速度 North Velocity (Ref: BT) [m/s] 垂向速度 East Up Velocity (Ref: BT) [m/s]    位置
+ 东向偏移量 East Displacement (Ref: BT) [m] 北向偏移量 North Displacement (Ref: BT) [m]    处理流程  用 WinRiverII 软件导出数据，每个测次每个变量会导出一个 txt 文件 把 txt 文件导入 python 处理数据并得出结果  包括：</description>
+    </item>
+    
+  </channel>
+</rss>

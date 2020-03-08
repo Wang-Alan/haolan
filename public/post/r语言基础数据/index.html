@@ -11,7 +11,7 @@
 <meta itemprop="description" content="提纲1. 如何读取数据2. 如何写入数据3. 数据格式与转化4. 数据框`data.frame`操作5. 当前工作目录1. 如何读取数据最基础函数 read.table()read.table(file, header = FALSE, sep =&quot;&quot;, quote = &quot;\&quot;&#39;&quot;, dec = &quot;.&quot;, row.names, col.names, as.is = !stringsAsFactors, na.strings = &quot;NA&quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &quot;#&quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &quot;&quot;, encoding = &quot;unknown&quot;, text）参数解释：">
 <meta itemprop="datePublished" content="2020-02-14T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-02-14T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="663">
+<meta itemprop="wordCount" content="814">
 
 
 
@@ -213,9 +213,9 @@ d</code></pre>
 </div>
 <div id="增加" class="section level3">
 <h3>增加</h3>
-<p><code>rbind</code> 增加行
-<code>cbind</code> 增加列
-<code>d$newColumn&lt;-c(aaa,bbb)</code> 增加一个名为<code>newColumn</code>的列</p>
+<p><code>rbind</code> 增加行</p>
+<p><code>cbind</code> 增加列</p>
+<p><code>d$newColumn&lt;-c(aaa,bbb)</code> 增加一个名为<code>newColumn</code>的列</p>
 <pre class="r"><code># 创建
 m &lt;- matrix(c(1:10),ncol=2)
 d &lt;- data.frame(m)
@@ -260,6 +260,7 @@ d </code></pre>
 <div id="合并" class="section level3">
 <h3>合并</h3>
 <p><code>merge</code> 合并两个<code>data.frame</code></p>
+<p>也可以用<code>cbind</code>或<code>rbind</code>合并<code>data.frame</code>，但是需要保证<code>data,frame</code>的维度和名称（行或者列）完全一致，否则会报错</p>
 <pre class="r"><code>a &lt;- data.frame(c1 = c(1,2,3),c2 = c(4,5,6))
 a</code></pre>
 <pre><code>##   c1 c2
@@ -282,7 +283,57 @@ c</code></pre>
 <p>删除某一行或者列</p>
 <pre class="r"><code>d &lt;- d[-1,]
 d &lt;- d[,-2]</code></pre>
-<p>有条件删除某一行或者列(下一篇博文)</p>
+</div>
+<div id="获取子data.frame" class="section level3">
+<h3>获取子data.frame</h3>
+<ul>
+<li>方法一：创建查询列表，提取</li>
+<li>方法二：使用 <code>subset</code> 函数</li>
+</ul>
+<p>例如：</p>
+<pre class="r"><code>d &lt;- data.frame(obs = c(1, 2, 3), treat = c(&quot;A&quot;, &quot;B&quot;, &quot;A&quot;), weight = c(2.3, NA, 9)) 
+row.names(d) &lt;- c(&#39;rname1&#39;, &#39;rname2&#39;, &#39;rname3&#39;)
+head(d)</code></pre>
+<pre><code>##        obs treat weight
+## rname1   1     A    2.3
+## rname2   2     B     NA
+## rname3   3     A    9.0</code></pre>
+<pre class="r"><code># 方法一
+# 获取行名为rname1和rname2的子data.frame
+sub_d &lt;- d[c(&#39;rname1&#39;, &#39;rname2&#39;),]
+head(sub_d)</code></pre>
+<pre><code>##        obs treat weight
+## rname1   1     A    2.3
+## rname2   2     B     NA</code></pre>
+<pre class="r"><code># 获取列名为obs和treat的子data.frame
+sub_d &lt;- d[c(&#39;obs&#39;, &#39;treat&#39;)]
+head(sub_d)</code></pre>
+<pre><code>##        obs treat
+## rname1   1     A
+## rname2   2     B
+## rname3   3     A</code></pre>
+<pre class="r"><code>#方法二
+# 获取列名为obs和treat的子data.frame
+sub_d &lt;- subset(d, select = c(&#39;obs&#39;, &#39;treat&#39;))
+head(sub_d)</code></pre>
+<pre><code>##        obs treat
+## rname1   1     A
+## rname2   2     B
+## rname3   3     A</code></pre>
+<pre class="r"><code>sub_d &lt;- subset(d, select = -weight)
+head(sub_d)</code></pre>
+<pre><code>##        obs treat
+## rname1   1     A
+## rname2   2     B
+## rname3   3     A</code></pre>
+<p>补充</p>
+<pre><code>subset(x, subset, select)</code></pre>
+<p>参数解释：</p>
+<ul>
+<li><code>x</code>：要操作的<code>data.frame</code></li>
+<li><code>subset</code>：逻辑表达式，一般是“列名-逻辑运算符-值”，如<code>Temp &gt; 80</code>，默认是<code>False</code></li>
+<li><code>select</code>：子<code>data.frame</code><strong>包含列的列名</strong>或<strong>删除列的列名</strong></li>
+</ul>
 </div>
 </div>
 <div id="当前工作目录" class="section level2">

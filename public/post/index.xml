@@ -7,10 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ADCP数据处理思路</title>
+      <link>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</guid>
+      <description>ADCP数据的处理思路 数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
+我们常用的变量包括：
+  水深 River Depth [m]
+  平均流速 Mean River Velocity (Ref: BT) [m/s]
+  速度
+ 东向速度 East Velocity (Ref: BT) [m/s] 北向速度 North Velocity (Ref: BT) [m/s] 垂向速度 East Up Velocity (Ref: BT) [m/s]    位置
+ 东向偏移量 East Displacement (Ref: BT) [m] 北向偏移量 North Displacement (Ref: BT) [m]    处理流程  用 WinRiverII 软件导出数据，每个测次每个变量会导出一个 txt 文件 把 txt 文件导入 python 处理数据并得出结果  包括：</description>
+    </item>
+    
+    <item>
+      <title>git 学习笔记</title>
+      <link>/post/git-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/git-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>git 学习笔记  说明：
+ git 只能追踪文本文件的修改，如代码、md文件等，不能追踪二进制文件修改，如word 以下仅是我会用到的一些常见命令，更多信息可以参考廖雪峰 git 教程和git 使用简易指南   创建版本库 git init把一个文件放进 git 仓库 git add &amp;lt;文件名&amp;gt;例如
+git add file1.txtgit add file2.txt file3.txtgit add .git commit -m &amp;lt;message&amp;gt;例如
+git commit -m &amp;#34;add file&amp;#34;git commit -m &amp;#34;modify files&amp;#34;git 工作流 查看仓库当前状态 git status查看具体修改内容 git diff &amp;lt;文件名&amp;gt;例如
+git diff file.txt查看历史记录 git log git log --pretty=oneline退回到历史版本 前一版
+git reset --hard HEAD^前二版</description>
+    </item>
     
     <item>
       <title>确定一个新的研究方向是很困难的</title>
@@ -116,28 +145,6 @@ PPT的实质应该就是提纲，以及必要的演示内容。如果我能把�
 11月15日 Water Research中；11月19日 Envoronmental science processes and impacts中，四天两篇，爽嗷
 文章写完之后，尤其是文章返修阶段，非常痛苦，当时觉得可能是因为没有自己的时间，现在看来，这不是痛苦的根本原因
 在2019年的最后一个月，受益于高人的指点，化解了我心中的不忿，从此可以开心，至少不痛苦，的科研了</description>
-    </item>
-    
-    <item>
-      <title>失眠后的胡思乱想</title>
-      <link>/post/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</link>
-      <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E5%A4%B1%E7%9C%A0%E5%90%8E%E7%9A%84%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</guid>
-      <description>1. 注重细节的动机- 优秀是一种习惯- 这件事对我很重要- 避免被老师批评2. 如何在工作中做好细节- 任何人的思维都有盲点，不是注意就有用的- 积累经验，听取他人意见3. 同时处理多件事务的能力精力（意志力）=电池- 长期处于充不满电（经常早起），天天放电至将近关机的状态- 而我本科的状态可能每天只消耗50%的电量，且每晚能充满- 高电量时的性能会好一些- 长期电量耗竭会对电池产生永久性损伤充电的方法- 睡觉- 吃甜食如何提高- 电池扩容- 提高处理器性能——更小的能耗，更高的处理速度 更好的使用习惯——及时充电，调整作息</description>
-    </item>
-    
-    <item>
-      <title>即插即用的能力</title>
-      <link>/post/%E5%8D%B3%E6%8F%92%E5%8D%B3%E7%94%A8%E7%9A%84%E8%83%BD%E5%8A%9B/</link>
-      <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E5%8D%B3%E6%8F%92%E5%8D%B3%E7%94%A8%E7%9A%84%E8%83%BD%E5%8A%9B/</guid>
-      <description>这个能力大约是某优秀的phD student快速学习第一次写完重点研发项目的申报书之后，老师在某天晚上感慨的时候指导我的。
-他当时对这个能力的定义是：对于完全陌生的工业废水排放，该phD 能快速学习，抓住问题的重点，顺利、按时、保质的完成了申报书的编写。
-这位phD拿来就用，尽管他原来没接触过相关内容，并且还好用。
-老师应该挺希望我能学会这个能力的，而且他告诉我这个是适应当下社会很重要的技能。
-深受启发，谨以此文留念。</description>
     </item>
     
   </channel>

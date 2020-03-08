@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Haolan&#39;s Website</title>
+    <link>/tags/git/</link>
+    <description>Recent content in git on Haolan&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git 学习笔记</title>
+      <link>/post/git-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/git-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>git 学习笔记  说明：
+ git 只能追踪文本文件的修改，如代码、md文件等，不能追踪二进制文件修改，如word 以下仅是我会用到的一些常见命令，更多信息可以参考廖雪峰 git 教程和git 使用简易指南   创建版本库 git init把一个文件放进 git 仓库 git add &amp;lt;文件名&amp;gt;例如
+git add file1.txtgit add file2.txt file3.txtgit add .git commit -m &amp;lt;message&amp;gt;例如
+git commit -m &amp;#34;add file&amp;#34;git commit -m &amp;#34;modify files&amp;#34;git 工作流 查看仓库当前状态 git status查看具体修改内容 git diff &amp;lt;文件名&amp;gt;例如
+git diff file.txt查看历史记录 git log git log --pretty=oneline退回到历史版本 前一版
+git reset --hard HEAD^前二版</description>
+    </item>
+    
+  </channel>
+</rss>
