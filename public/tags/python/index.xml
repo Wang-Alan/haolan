@@ -18,7 +18,7 @@
       <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</guid>
-      <description>ADCP数据的处理思路 数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
+      <description>数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
 我们常用的变量包括：
   水深 River Depth [m]
   平均流速 Mean River Velocity (Ref: BT) [m/s]

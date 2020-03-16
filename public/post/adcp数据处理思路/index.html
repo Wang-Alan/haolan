@@ -8,7 +8,7 @@
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
 <meta itemprop="name" content="ADCP数据处理思路">
-<meta itemprop="description" content="ADCP数据的处理思路 数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
+<meta itemprop="description" content="数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
 我们常用的变量包括：
   水深 River Depth [m]
   平均流速 Mean River Velocity (Ref: BT) [m/s]
@@ -17,12 +17,12 @@
  东向偏移量 East Displacement (Ref: BT) [m] 北向偏移量 North Displacement (Ref: BT) [m]    处理流程  用 WinRiverII 软件导出数据，每个测次每个变量会导出一个 txt 文件 把 txt 文件导入 python 处理数据并得出结果  包括：">
 <meta itemprop="datePublished" content="2020-03-08T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-03-08T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="112">
+<meta itemprop="wordCount" content="111">
 
 
 
 <meta itemprop="keywords" content="Python," /><meta property="og:title" content="ADCP数据处理思路" />
-<meta property="og:description" content="ADCP数据的处理思路 数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
+<meta property="og:description" content="数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
 我们常用的变量包括：
   水深 River Depth [m]
   平均流速 Mean River Velocity (Ref: BT) [m/s]
@@ -35,7 +35,7 @@
 <meta property="article:modified_time" content="2020-03-08T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ADCP数据处理思路"/>
-<meta name="twitter:description" content="ADCP数据的处理思路 数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
+<meta name="twitter:description" content="数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
 我们常用的变量包括：
   水深 River Depth [m]
   平均流速 Mean River Velocity (Ref: BT) [m/s]
@@ -88,8 +88,7 @@
 	<main class="site-main section-inner thin animated fadeIn faster">
 		<h1>ADCP数据处理思路</h1>
 		<div class="content">
-			<h2 id="adcp数据的处理思路">ADCP数据的处理思路<a href="#adcp数据的处理思路" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-<h3 id="数据概况">数据概况<a href="#数据概况" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+			<h2 id="数据概况">数据概况<a href="#数据概况" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>ADCP会对选定河段的若干断面进行测量，每个断面是一个<strong>测次</strong>，每个测次由若干数据组组成，每个数据组都有唯一<strong>数据组序号（Ensemble Number）</strong>，每个数据组对于任一变量含若干不等的数据，代表该变量<strong>不同深度</strong>的值。</p>
 <p>我们常用的变量包括：</p>
 <ul>
@@ -115,7 +114,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="处理流程">处理流程<a href="#处理流程" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h2 id="处理流程">处理流程<a href="#处理流程" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <ol>
 <li>用 WinRiverII 软件导出数据，每个测次每个变量会导出一个 txt 文件</li>
 <li>把 txt 文件导入 python</li>
@@ -135,7 +134,7 @@
 <li>数据是多维度的。若干断面，每个断面有若干数据组集合，每个数据组集合有若干变量，每个变量是一组不等长的数组，这些数组与数据组集合的编号对应。</li>
 <li>每个数据组集都有唯一的编号，每个变量都有唯一的名称。</li>
 </ol>
-<h3 id="面向对象编程">面向对象编程<a href="#面向对象编程" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h2 id="面向对象编程">面向对象编程<a href="#面向对象编程" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <blockquote>
 <p>比较理想的存储模式是创建结构体数组，每个结构体代表一个断面，每个断面里存储不同的数据，但是因为 python 不支持结构体，所以用面向对象的方法，组织数据。</p>
 <p>直接用 numpy 包的多维数组创建的数据结构太乱了，影响程序的可读性。</p>
@@ -145,9 +144,9 @@
 <p>属性：数据组集编号、水深、平均流速、东向流速、北向流速、垂向流速、东向偏移量、北向偏移量</p>
 <h4 id="原生数据类型">原生数据类型<a href="#原生数据类型" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>数据组集编号（元组）、水深（字典）、平均流速（字典）、东向流速（字典）、北向流速（字典）、垂向流速（字典）、东向偏移量（字典）、北向偏移量（字典）</p>
-<h4 id="pandas包的dataframe">Pandas包的DataFrame<a href="#pandas包的dataframe" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<h3 id="pandas包的dataframe">Pandas包的DataFrame<a href="#pandas包的dataframe" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>由于原生数据类型的字典不好计算，因此用pandas包里的 DataFrame 代替字典等</p>
-<h3 id="代码文件及对应功能">代码文件及对应功能<a href="#代码文件及对应功能" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h2 id="代码文件及对应功能">代码文件及对应功能<a href="#代码文件及对应功能" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <ul>
 <li>
 <p>反距离插值</p>

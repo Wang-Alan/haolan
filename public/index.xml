@@ -13,12 +13,45 @@
     
     
     <item>
+      <title>怀念我的皇家帝国理工</title>
+      <link>/post/%E6%80%80%E5%BF%B5%E6%88%91%E7%9A%84%E7%9A%87%E5%AE%B6%E5%B8%9D%E5%9B%BD%E7%90%86%E5%B7%A5/</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E6%80%80%E5%BF%B5%E6%88%91%E7%9A%84%E7%9A%87%E5%AE%B6%E5%B8%9D%E5%9B%BD%E7%90%86%E5%B7%A5/</guid>
+      <description>在河海待得越久，就越怀念上理。
+上理的风景很好，人也很美。
+那里有各种各样的人，有喜欢音乐的十大歌手，有喜欢做学生工作的学生干部，有喜欢学习的学霸，有喜欢运动的校队队员，有喜欢电子设计的机器人赛队&amp;hellip;&amp;hellip;
+就算什么都不喜欢，呆在宿舍打游戏，跟朋友一起逛吃逛喝，也是一种生活方式。
+来到河海之后，身边的同学们大多数都一心扑在科研上，忙里偷闲的做一些能提高幸福感的事情；随着组会汇报周期性焦虑，不断地患得患失；运动也逐渐变成了维持身体健康，调整科研生活的例行公事。
+这一年多，我改变挺多的。
+不可否认的是，我对自己的研究领域了解的越来越多，我对科研的理解也在逐渐加深。
+但是，我有时会不自觉地想：老师说的这句话是什么意思？老师究竟对我的工作满不满意？下次汇报我会不会被批评？老师批评我是为了鼓励我还是气急败坏？我还会想：老师的建议真的是对的吗？我真的需要一直把科研放在脑子里，我真的需要从早上八点半到晚上九点半吗？周末加班是因为我能力差导致的吗？不加班我的科研一定会做不好吗？
+常常想这些问题，我自己都感觉自己在变得越来越无趣、乏味。虽然今后工作中如何与领导相处可能是很重要的一部分，但是学生时代我真的不想学这些东西。
+有时也会担心，自己会不会是眼高手低，想的太多做的太少呢？至少暂时从进度、工作时间等方面来看，我做的不少。与其活成老师指导下的模样，不如独立思考，有自己的判断和认识。
+ 你的为人、你的思考、你的感受和所做之事，以及你的喜好，恰是你所关注事物的概括。
+ 在上理的每个人都能自由的选择自己喜欢的东西并为之付出时间和精力，最后每个人都为自己的选择“埋单”。
+2020年，我要回一次上理。</description>
+    </item>
+    
+    <item>
+      <title>生活中需要警惕的现象</title>
+      <link>/post/%E7%94%9F%E6%B4%BB%E4%B8%AD%E9%9C%80%E8%A6%81%E8%AD%A6%E6%83%95%E7%9A%84%E7%8E%B0%E8%B1%A1/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%94%9F%E6%B4%BB%E4%B8%AD%E9%9C%80%E8%A6%81%E8%AD%A6%E6%83%95%E7%9A%84%E7%8E%B0%E8%B1%A1/</guid>
+      <description>最小阻力原则（ThePrinciple of LeastResistance）：在工作环境下，若各种行为对于底线的影响没有得到明确的反馈意见，我们倾向于采用当下最简单易行的行为。
+忙碌代表生产能力（Busynessas Proxy forProductivity）：在工作中，对于生产能力和价值没有明确的指标时，很多知识工作者都会采用工业时代关于生产能力的指标，以可视的方式完成很多事情。
+当工作中没有明确目标时，围绕浮浅工作的表面忙碌会成为一种本能。
+ 当工作中只有一件事的时候，不需要合理安排时间的能力、不需要同时处理多项事务的能力。Just do it! 只有当生活中充斥着各种事情，来自各种人的任务，这时候才需要用到这些能力。所以，老师及时帮我辅导了这些我欠缺的东西。</description>
+    </item>
+    
+    <item>
       <title>ADCP数据处理思路</title>
       <link>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</link>
       <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</guid>
-      <description>ADCP数据的处理思路 数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
+      <description>数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
 我们常用的变量包括：
   水深 River Depth [m]
   平均流速 Mean River Velocity (Ref: BT) [m/s]
@@ -33,22 +66,12 @@
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/git-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>git 学习笔记  说明：
+      <description>说明：
  git 只能追踪文本文件的修改，如代码、md文件等，不能追踪二进制文件修改，如word 以下仅是我会用到的一些常见命令，更多信息可以参考廖雪峰 git 教程和git 使用简易指南   创建版本库 git init把一个文件放进 git 仓库 git add &amp;lt;文件名&amp;gt;例如
 git add file1.txtgit add file2.txt file3.txtgit add .git commit -m &amp;lt;message&amp;gt;例如
 git commit -m &amp;#34;add file&amp;#34;git commit -m &amp;#34;modify files&amp;#34;git 工作流 查看仓库当前状态 git status查看具体修改内容 git diff &amp;lt;文件名&amp;gt;例如
 git diff file.txt查看历史记录 git log git log --pretty=oneline退回到历史版本 前一版
 git reset --hard HEAD^前二版</description>
-    </item>
-    
-    <item>
-      <title>确定一个新的研究方向是很困难的</title>
-      <link>/post/%E7%A1%AE%E5%AE%9A%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E6%98%AF%E5%BE%88%E5%9B%B0%E9%9A%BE%E7%9A%84/</link>
-      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E7%A1%AE%E5%AE%9A%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E6%98%AF%E5%BE%88%E5%9B%B0%E9%9A%BE%E7%9A%84/</guid>
-      <description>即使做了很多年科研，发了不少文章，提出一个新的研究方向，依然是一件很难的事情。需要再三斟酌，反复修改，与他人交流，反复验证，最终才能确定下来，并且不是一开始就把所有的细节考虑清楚。
-在这个过程种会走很多弯路，浪费很多时间，而错误的源头便是一开始就不靠谱的想法。</description>
     </item>
     
     <item>
@@ -128,23 +151,7 @@ E同学 我们是帮他拿快递 帮他打杂 帮他写班主任日志 每天都
       <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
-      <description>以上，是做年终总结PPT之前的一个提纲式总结。
-PPT的实质应该就是提纲，以及必要的演示内容。如果我能把年终总结的PPT做成上面这样，我就有更多的时间去思考，而不是美化PPT。即使我想学习做好PPT，看教学视频不是最好的方法吗？我一定要花超大量时间做，然后被指导逐渐提升吗？
-来河海之后，做PPT有了很多规范，比如：
- 从问题出发 用蓝色的字 英文用Arial和Times New Roman 中文用黑体或宋体 用课题组模板一定不会丑 在河海讲PPT不需要放河海的logo PPT上的语言不能口语化 及其他  以上，我不知道是对是错，我也不知道是否应该全部接受。我只是觉得，如果我毕业后，我身上没有一点自己的东西，全是课题组灌输给我的思想，那么我跟巨婴有什么区别。</description>
-    </item>
-    
-    <item>
-      <title>新年快乐</title>
-      <link>/post/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</link>
-      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</guid>
-      <description>2019年，看成果其实还挺好的
-论文两篇，一篇Water Research，一篇Desalination and Water Treatment 其实我还有一篇帮别人投的，也中了
-11月15日 Water Research中；11月19日 Envoronmental science processes and impacts中，四天两篇，爽嗷
-文章写完之后，尤其是文章返修阶段，非常痛苦，当时觉得可能是因为没有自己的时间，现在看来，这不是痛苦的根本原因
-在2019年的最后一个月，受益于高人的指点，化解了我心中的不忿，从此可以开心，至少不痛苦，的科研了</description>
+      <description>以上，是做年终总结PPT之前的一个提纲式总结。</description>
     </item>
     
   </channel>

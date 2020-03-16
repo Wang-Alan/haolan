@@ -8,7 +8,7 @@
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
 <meta itemprop="name" content="git 学习笔记">
-<meta itemprop="description" content="git 学习笔记  说明：
+<meta itemprop="description" content="说明：
  git 只能追踪文本文件的修改，如代码、md文件等，不能追踪二进制文件修改，如word 以下仅是我会用到的一些常见命令，更多信息可以参考廖雪峰 git 教程和git 使用简易指南   创建版本库 git init把一个文件放进 git 仓库 git add &lt;文件名&gt;例如
 git add file1.txtgit add file2.txt file3.txtgit add .git commit -m &lt;message&gt;例如
 git commit -m &#34;add file&#34;git commit -m &#34;modify files&#34;git 工作流 查看仓库当前状态 git status查看具体修改内容 git diff &lt;文件名&gt;例如
@@ -16,12 +16,12 @@ git diff file.txt查看历史记录 git log git log --pretty=oneline退回到�
 git reset --hard HEAD^前二版">
 <meta itemprop="datePublished" content="2020-03-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-03-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="105">
+<meta itemprop="wordCount" content="103">
 
 
 
 <meta itemprop="keywords" content="git," /><meta property="og:title" content="git 学习笔记" />
-<meta property="og:description" content="git 学习笔记  说明：
+<meta property="og:description" content="说明：
  git 只能追踪文本文件的修改，如代码、md文件等，不能追踪二进制文件修改，如word 以下仅是我会用到的一些常见命令，更多信息可以参考廖雪峰 git 教程和git 使用简易指南   创建版本库 git init把一个文件放进 git 仓库 git add &lt;文件名&gt;例如
 git add file1.txtgit add file2.txt file3.txtgit add .git commit -m &lt;message&gt;例如
 git commit -m &#34;add file&#34;git commit -m &#34;modify files&#34;git 工作流 查看仓库当前状态 git status查看具体修改内容 git diff &lt;文件名&gt;例如
@@ -33,7 +33,7 @@ git reset --hard HEAD^前二版" />
 <meta property="article:modified_time" content="2020-03-01T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="git 学习笔记"/>
-<meta name="twitter:description" content="git 学习笔记  说明：
+<meta name="twitter:description" content="说明：
  git 只能追踪文本文件的修改，如代码、md文件等，不能追踪二进制文件修改，如word 以下仅是我会用到的一些常见命令，更多信息可以参考廖雪峰 git 教程和git 使用简易指南   创建版本库 git init把一个文件放进 git 仓库 git add &lt;文件名&gt;例如
 git add file1.txtgit add file2.txt file3.txtgit add .git commit -m &lt;message&gt;例如
 git commit -m &#34;add file&#34;git commit -m &#34;modify files&#34;git 工作流 查看仓库当前状态 git status查看具体修改内容 git diff &lt;文件名&gt;例如
@@ -85,17 +85,16 @@ git reset --hard HEAD^前二版"/>
 	<main class="site-main section-inner thin animated fadeIn faster">
 		<h1>git 学习笔记</h1>
 		<div class="content">
-			<h2 id="git-学习笔记">git 学习笔记<a href="#git-学习笔记" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-<blockquote>
+			<blockquote>
 <p>说明：</p>
 <ol>
 <li>git 只能追踪文本文件的修改，如代码、md文件等，不能追踪二进制文件修改，如word</li>
 <li>以下仅是我会用到的一些常见命令，更多信息可以参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰 git 教程</a>和<a href="https://www.bootcss.com/p/git-guide/"> git 使用简易指南</a></li>
 </ol>
 </blockquote>
-<h3 id="创建版本库">创建版本库<a href="#创建版本库" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h2 id="创建版本库">创建版本库<a href="#创建版本库" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git init
-</code></pre></div><h3 id="把一个文件放进-git-仓库">把一个文件放进 git 仓库<a href="#把一个文件放进-git-仓库" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+</code></pre></div><h2 id="把一个文件放进-git-仓库">把一个文件放进 git 仓库<a href="#把一个文件放进-git-仓库" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git add &lt;文件名&gt;
 </code></pre></div><p>例如</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git add file1.txt
@@ -106,36 +105,36 @@ git add .
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git commit -m <span class="s2">&#34;add file&#34;</span>
 
 git commit -m <span class="s2">&#34;modify files&#34;</span>
-</code></pre></div><h3 id="git-工作流">git 工作流<a href="#git-工作流" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+</code></pre></div><h2 id="git-工作流">git 工作流<a href="#git-工作流" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p><img src="https://www.bootcss.com/p/git-guide/img/trees.png" alt="img"></p>
-<h3 id="查看仓库当前状态">查看仓库当前状态<a href="#查看仓库当前状态" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h2 id="查看仓库当前状态">查看仓库当前状态<a href="#查看仓库当前状态" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git status
-</code></pre></div><h3 id="查看具体修改内容">查看具体修改内容<a href="#查看具体修改内容" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+</code></pre></div><h2 id="查看具体修改内容">查看具体修改内容<a href="#查看具体修改内容" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git diff &lt;文件名&gt;
 </code></pre></div><p>例如</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git diff file.txt
-</code></pre></div><h3 id="查看历史记录">查看历史记录<a href="#查看历史记录" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+</code></pre></div><h2 id="查看历史记录">查看历史记录<a href="#查看历史记录" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git log 
 
 git log --pretty<span class="o">=</span>oneline
-</code></pre></div><h3 id="退回到历史版本">退回到历史版本<a href="#退回到历史版本" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+</code></pre></div><h2 id="退回到历史版本">退回到历史版本<a href="#退回到历史版本" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>前一版</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git reset --hard HEAD^
 </code></pre></div><p>前二版</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git reset --hard HEAD^^
 </code></pre></div><p>前100版</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git reset --hard HEAD~100
-</code></pre></div><h3 id="退回后反悔">退回后反悔<a href="#退回后反悔" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+</code></pre></div><h2 id="退回后反悔">退回后反悔<a href="#退回后反悔" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>查看commit id</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git reflog
 </code></pre></div><p>退回</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git reset --hard 1094a
-</code></pre></div><h3 id="关联远程库">关联远程库<a href="#关联远程库" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+</code></pre></div><h2 id="关联远程库">关联远程库<a href="#关联远程库" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git remote add origin &lt;服务器地址&gt;
 </code></pre></div><blockquote>
 <p>注：&lt;服务器地址&gt;在 github 仓库页复制即可，仅需要第一次配置时关联</p>
 </blockquote>
-<h3 id="推送改动">推送改动<a href="#推送改动" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h2 id="推送改动">推送改动<a href="#推送改动" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git push origin master
 </code></pre></div><blockquote>
 <p>注：origin 是远程库名称，master是当前分支</p>
