@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>为什么要把 R 代码写在 R markdown 上</title>
+      <link>/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8A%8A-r-%E4%BB%A3%E7%A0%81%E5%86%99%E5%9C%A8-r-markdown-%E4%B8%8A/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8A%8A-r-%E4%BB%A3%E7%A0%81%E5%86%99%E5%9C%A8-r-markdown-%E4%B8%8A/</guid>
+      <description>R 代码原来写在哪里？  R 代码最常见的是写在脚本（.r）里，文字可以通过注释加在脚本的字里行间。但是存在一些问题：
+  在数据分析中，注释通常会涉及公式，在脚本中无法呈现
+  如果与他人交流数据分析过程，将代码与输出结果对应，沟通交流会很高效
+  数据分析过程中对代码参数修改过多，如果不做好记录，很容易忘记一些重要的细节
+  数据分析通常需要保存中间步骤的输出结果
+  于是 jupyter notebook 被开发出来了。最开始的 jupyter notebook 是给 python 语言开发的，现在也广泛的被数据分析师应用。但是最开始的 jupyter notebook 是在浏览器中运行的，浏览器中的 jupyter notebook 使用中有一些弊端，比如代码开发、调试等开发过程对 IDE 的使用频率非常高，将 jupyter notebook 放在浏览器运行会导致很多额外的步骤。
+为什么使用 R markdown  目前，它被整合进了 VS code - 非常有些的IDE -弊端也逐渐消失。而 VS code 下的 jupyter notebook 并不支持 R 语言，而 R 语言原生的与 jupyter notebook 对应的，便是 R markdown。
+此外，R markdown 相比于 jupyter notebook 还有额外的优势，包括：</description>
+    </item>
     
     <item>
       <title>R语言基础——数据</title>

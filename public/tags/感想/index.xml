@@ -7,10 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/%E6%84%9F%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>优秀的学长</title>
+      <link>/post/%E4%BC%98%E7%A7%80%E7%9A%84%E5%AD%A6%E9%95%BF/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E4%BC%98%E7%A7%80%E7%9A%84%E5%AD%A6%E9%95%BF/</guid>
+      <description>大四带我毕设的学长，是一个非常认真的人。甚至可以说是我科研的引路人之一，他告诉了我许多道理，关于科研、关于实验。问他的问题，即使当时不会，之后也会告诉我答案。
+他与老师的相处，也非常值得我学习。他的性格属于那种不急躁、很温和的。老师布置的任务一般也不会推脱，就慢慢做，通常不会刻意地去追赶 Deadline。做完就做完了，做不完就说没做完。
+慢慢，老师也就习惯了他的节奏&amp;hellip;&amp;hellip;而且他工作做得挺好的。</description>
+    </item>
+    
+    <item>
+      <title>给一篇论文提建议</title>
+      <link>/post/%E7%BB%99%E4%B8%80%E7%AF%87%E8%AE%BA%E6%96%87%E6%8F%90%E5%BB%BA%E8%AE%AE/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%BB%99%E4%B8%80%E7%AF%87%E8%AE%BA%E6%96%87%E6%8F%90%E5%BB%BA%E8%AE%AE/</guid>
+      <description>今天有人给了我一篇论文，让给我看看，给提点建议，我先是粗略的看了一遍，然后标注了一堆问题。正准备发出去，然后浏览了下我发现的问题，大致包括下面几种：
+  大小写
+  空格
+  图是否好看、清晰
+  看着这些问题，我实在不忍心发出去，感觉提这些问题，作者看了肯定会觉得这人怎么这么 low。
+这也让我想到自己的一些经历，比如我做组会汇报，老师给我提建议，如果提的净是些你的坐标轴没写题目，科研规范是第一位的&amp;hellip;&amp;hellip;；如果提的是小数点保留几位小数，几位有效数字&amp;hellip;&amp;hellip;；还有一些更过分的，什么 ppt 丑，有错别字，语法不对，注意细节&amp;hellip;&amp;hellip;这些问题我基本上是懒得管的。</description>
+    </item>
     
     <item>
       <title>怀念我的皇家帝国理工</title>
@@ -122,28 +147,6 @@ E同学 我们是帮他拿快递 帮他打杂 帮他写班主任日志 每天都
       <guid>/post/%E6%84%9F%E8%B0%A2%E4%BA%91%E5%93%B2/</guid>
       <description>附庸风雅的我嗷~
 喜欢海纳百川。</description>
-    </item>
-    
-    <item>
-      <title>投了投了</title>
-      <link>/post/%E6%8A%95%E4%BA%86%E6%8A%95%E4%BA%86/</link>
-      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E6%8A%95%E4%BA%86%E6%8A%95%E4%BA%86/</guid>
-      <description>虽然没赶上618，但是我赶上了816啊！
-都是电商的好日子。
-双11会发生些什么呢？也许什么都不会发生。</description>
-    </item>
-    
-    <item>
-      <title>鸽了鸽了</title>
-      <link>/post/%E9%B8%BD%E4%BA%86%E9%B8%BD%E4%BA%86/</link>
-      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E9%B8%BD%E4%BA%86%E9%B8%BD%E4%BA%86/</guid>
-      <description>618投稿的愿望注定要破灭了。
-第一篇论文投稿时间也不是我一个人能确定的啊！
-鸽就鸽了&amp;hellip;&amp;hellip;</description>
     </item>
     
   </channel>
