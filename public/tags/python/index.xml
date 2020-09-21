@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>python?大数据？</title>
+      <link>/post/python/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/python/</guid>
+      <description>python是一门有广度但是没有深度的语言，如果要做大数据处理，最好使用计算密集型语言，比如java、c、c#。python不属于计算密集型语言，设计之初有缺陷，有个所会导致python不能全方面支持并发和并行。
+java虽然也属于计算密集型语言，但是毕竟是应用层的语言，效率普遍都比较低，相比之下，c、c++、c#效率奇高，性能完爆。
+但是在应用层，如果要做大数据，java是主流，有两个主要的框架，天然的spark和hadoop。
+服务端默认都是支持python的，对于运维而言，python是第一语言，web应用有个django框架，属于中等级别，ins就是这个框架写的。
+所以学python值不值得呢？我也不知道，反正我是会用的。</description>
+    </item>
     
     <item>
       <title>ADCP数据处理思路</title>
