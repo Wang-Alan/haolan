@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="简易单片机开发">
+<meta itemprop="description" content="51单片机，是我玩的第一种单片机，记得当时买了芝麻电子的开发板，与很多人看郭天祥的视频不同，我当时主要是看教材，《爱上单片机》。
+现在想想，51是非常适合入门的一个板子，它没有库函数，只能操作寄存器，在学习的过程中，会对原理有很具体的认识。
+后来，做智能开关的项目，因为51只有一组串口，如果要同时与两个串口进行通讯，需要虚拟一个软串口，但是项目周期比较紧，忍痛放弃了51，选择了Arduino用于开发。
+初次上手Arduino，发现这玩意是真的简单啊，凭借51的基础，基本上半个小时不到就能上手，并且用的贼6。
+之所以Arduino上手这么容易，主要是因为他将功能都包装成库函数了，并且给出了非常详细的示例代码。库函数让很多对寄存器的操作都被隐藏起来了，虽然可以在相应的头文件种查到具体操作的。但是，既然有了库函数，谁还回去深究具体的细节呢？这点在后面STM32的学习中得到了证实。
+STM32的官方，就给出了库函数版和寄存器版，当时几乎所有人都选择了库函数版，没有人再去关心寄存器版的代码是什么样子的。但是，由于最初51的基础，其实对STM32的原理还是有些感觉的，只是不再去关心更细节的东西了。毕竟不打算在电子设计领域深耕，了解点皮毛，会用就行。
+后来一次偶然的机会，去校外的辅导机构做兼职，职位是少儿机器人编程老师，当时最高端的课程，就是基于Arduino做的，面向孩子的年龄是14岁以上。以Arduino为载体，教给孩子的，更多的是C语言基础和输入输出的一些概念，在我看来，在知识本身和普通的C语言并没有什么区别，但是以Arduino为载体，孩子会更有兴趣。
+学一些编程语言的语法，其实是很容易的，难点主要是在编程的思维上面。">
+<meta itemprop="datePublished" content="2020-09-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-09-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="8">
+
+
+
+<meta itemprop="keywords" content="单片机," /><meta property="og:title" content="简易单片机开发" />
+<meta property="og:description" content="51单片机，是我玩的第一种单片机，记得当时买了芝麻电子的开发板，与很多人看郭天祥的视频不同，我当时主要是看教材，《爱上单片机》。
+现在想想，51是非常适合入门的一个板子，它没有库函数，只能操作寄存器，在学习的过程中，会对原理有很具体的认识。
+后来，做智能开关的项目，因为51只有一组串口，如果要同时与两个串口进行通讯，需要虚拟一个软串口，但是项目周期比较紧，忍痛放弃了51，选择了Arduino用于开发。
+初次上手Arduino，发现这玩意是真的简单啊，凭借51的基础，基本上半个小时不到就能上手，并且用的贼6。
+之所以Arduino上手这么容易，主要是因为他将功能都包装成库函数了，并且给出了非常详细的示例代码。库函数让很多对寄存器的操作都被隐藏起来了，虽然可以在相应的头文件种查到具体操作的。但是，既然有了库函数，谁还回去深究具体的细节呢？这点在后面STM32的学习中得到了证实。
+STM32的官方，就给出了库函数版和寄存器版，当时几乎所有人都选择了库函数版，没有人再去关心寄存器版的代码是什么样子的。但是，由于最初51的基础，其实对STM32的原理还是有些感觉的，只是不再去关心更细节的东西了。毕竟不打算在电子设计领域深耕，了解点皮毛，会用就行。
+后来一次偶然的机会，去校外的辅导机构做兼职，职位是少儿机器人编程老师，当时最高端的课程，就是基于Arduino做的，面向孩子的年龄是14岁以上。以Arduino为载体，教给孩子的，更多的是C语言基础和输入输出的一些概念，在我看来，在知识本身和普通的C语言并没有什么区别，但是以Arduino为载体，孩子会更有兴趣。
+学一些编程语言的语法，其实是很容易的，难点主要是在编程的思维上面。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/%E7%AE%80%E6%98%93%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91/" />
+<meta property="article:published_time" content="2020-09-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-27T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="简易单片机开发"/>
+<meta name="twitter:description" content="51单片机，是我玩的第一种单片机，记得当时买了芝麻电子的开发板，与很多人看郭天祥的视频不同，我当时主要是看教材，《爱上单片机》。
+现在想想，51是非常适合入门的一个板子，它没有库函数，只能操作寄存器，在学习的过程中，会对原理有很具体的认识。
+后来，做智能开关的项目，因为51只有一组串口，如果要同时与两个串口进行通讯，需要虚拟一个软串口，但是项目周期比较紧，忍痛放弃了51，选择了Arduino用于开发。
+初次上手Arduino，发现这玩意是真的简单啊，凭借51的基础，基本上半个小时不到就能上手，并且用的贼6。
+之所以Arduino上手这么容易，主要是因为他将功能都包装成库函数了，并且给出了非常详细的示例代码。库函数让很多对寄存器的操作都被隐藏起来了，虽然可以在相应的头文件种查到具体操作的。但是，既然有了库函数，谁还回去深究具体的细节呢？这点在后面STM32的学习中得到了证实。
+STM32的官方，就给出了库函数版和寄存器版，当时几乎所有人都选择了库函数版，没有人再去关心寄存器版的代码是什么样子的。但是，由于最初51的基础，其实对STM32的原理还是有些感觉的，只是不再去关心更细节的东西了。毕竟不打算在电子设计领域深耕，了解点皮毛，会用就行。
+后来一次偶然的机会，去校外的辅导机构做兼职，职位是少儿机器人编程老师，当时最高端的课程，就是基于Arduino做的，面向孩子的年龄是14岁以上。以Arduino为载体，教给孩子的，更多的是C语言基础和输入输出的一些概念，在我看来，在知识本身和普通的C语言并没有什么区别，但是以Arduino为载体，孩子会更有兴趣。
+学一些编程语言的语法，其实是很容易的，难点主要是在编程的思维上面。"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>简易单片机开发</title>
+	<link rel="stylesheet" href="/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="/">Haolan&#39;s Website</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="/post/">全部</a>
+				<a href="/tags/">分类</a>
+				<a href="/about/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/Wang-Alan" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="/post/">全部</a></li>
+			<li><a href="/tags/">分类</a></li>
+			<li><a href="/about/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>简易单片机开发</h1>
+		<div class="content">
+			<p>51单片机，是我玩的第一种单片机，记得当时买了芝麻电子的开发板，与很多人看郭天祥的视频不同，我当时主要是看教材，《爱上单片机》。</p>
+<p>现在想想，51是非常适合入门的一个板子，它没有库函数，只能操作寄存器，在学习的过程中，会对原理有很具体的认识。</p>
+<p>后来，做智能开关的项目，因为51只有一组串口，如果要同时与两个串口进行通讯，需要虚拟一个软串口，但是项目周期比较紧，忍痛放弃了51，选择了Arduino用于开发。</p>
+<p>初次上手Arduino，发现这玩意是真的简单啊，凭借51的基础，基本上半个小时不到就能上手，并且用的贼6。</p>
+<p>之所以Arduino上手这么容易，主要是因为他将功能都包装成库函数了，并且给出了非常详细的示例代码。库函数让很多对寄存器的操作都被隐藏起来了，虽然可以在相应的头文件种查到具体操作的。但是，既然有了库函数，谁还回去深究具体的细节呢？这点在后面STM32的学习中得到了证实。</p>
+<p>STM32的官方，就给出了库函数版和寄存器版，当时几乎所有人都选择了库函数版，没有人再去关心寄存器版的代码是什么样子的。但是，由于最初51的基础，其实对STM32的原理还是有些感觉的，只是不再去关心更细节的东西了。毕竟不打算在电子设计领域深耕，了解点皮毛，会用就行。</p>
+<p>后来一次偶然的机会，去校外的辅导机构做兼职，职位是少儿机器人编程老师，当时最高端的课程，就是基于Arduino做的，面向孩子的年龄是14岁以上。以Arduino为载体，教给孩子的，更多的是C语言基础和输入输出的一些概念，在我看来，在知识本身和普通的C语言并没有什么区别，但是以Arduino为载体，孩子会更有兴趣。</p>
+<p>学一些编程语言的语法，其实是很容易的，难点主要是在编程的思维上面。</p>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="/">Wang Haolan</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

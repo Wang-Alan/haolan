@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="MATLAB串口通讯——以Arduino为例">
+<meta itemprop="description" content="Arduino代码
+每10s发送一次&quot;Hello World!&ldquo;给上位机，当收到上位机的任意字符串string，返回received string。
+String inputString = &quot;recieved &quot;;bool stringComplete = false;void setup() {pinMode(LED_BUILTIN, OUTPUT);Serial.begin(9600);inputString.reserve(200);}void loop() {analogWrite(LED_BUILTIN, 150);delay(10000);Serial.println(&quot;Hello World!&quot;);if (stringComplete) {Serial.println(inputString);inputString = &quot;recieved &quot;;stringComplete = false;}}void serialEvent() {while (Serial.available()) {char inChar = (char)Serial.read();inputString &#43;= inChar;if (inChar == &#39;\n&#39;) {stringComplete = true;}}}MATLAB代码
+ 普通串口通讯  s=serial(&#39;com3&#39;);set(s,&#39;BaudRate&#39;,9600); %设置波特率s%打开串口fopen(s);%写入串口str = (&#39;hello world&#39;);fprintf(s, str ,&#39;async&#39;);% 读取串口fgetl(s)%关闭串口fclose(s);2.">
+<meta itemprop="datePublished" content="2020-09-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-09-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="115">
+
+
+
+<meta itemprop="keywords" content="单片机," /><meta property="og:title" content="MATLAB串口通讯——以Arduino为例" />
+<meta property="og:description" content="Arduino代码
+每10s发送一次&quot;Hello World!&ldquo;给上位机，当收到上位机的任意字符串string，返回received string。
+String inputString = &quot;recieved &quot;;bool stringComplete = false;void setup() {pinMode(LED_BUILTIN, OUTPUT);Serial.begin(9600);inputString.reserve(200);}void loop() {analogWrite(LED_BUILTIN, 150);delay(10000);Serial.println(&quot;Hello World!&quot;);if (stringComplete) {Serial.println(inputString);inputString = &quot;recieved &quot;;stringComplete = false;}}void serialEvent() {while (Serial.available()) {char inChar = (char)Serial.read();inputString &#43;= inChar;if (inChar == &#39;\n&#39;) {stringComplete = true;}}}MATLAB代码
+ 普通串口通讯  s=serial(&#39;com3&#39;);set(s,&#39;BaudRate&#39;,9600); %设置波特率s%打开串口fopen(s);%写入串口str = (&#39;hello world&#39;);fprintf(s, str ,&#39;async&#39;);% 读取串口fgetl(s)%关闭串口fclose(s);2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/matlab%E4%B8%B2%E5%8F%A3%E9%80%9A%E8%AE%AF-%E4%BB%A5arduino%E4%B8%BA%E4%BE%8B/" />
+<meta property="article:published_time" content="2020-09-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-28T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MATLAB串口通讯——以Arduino为例"/>
+<meta name="twitter:description" content="Arduino代码
+每10s发送一次&quot;Hello World!&ldquo;给上位机，当收到上位机的任意字符串string，返回received string。
+String inputString = &quot;recieved &quot;;bool stringComplete = false;void setup() {pinMode(LED_BUILTIN, OUTPUT);Serial.begin(9600);inputString.reserve(200);}void loop() {analogWrite(LED_BUILTIN, 150);delay(10000);Serial.println(&quot;Hello World!&quot;);if (stringComplete) {Serial.println(inputString);inputString = &quot;recieved &quot;;stringComplete = false;}}void serialEvent() {while (Serial.available()) {char inChar = (char)Serial.read();inputString &#43;= inChar;if (inChar == &#39;\n&#39;) {stringComplete = true;}}}MATLAB代码
+ 普通串口通讯  s=serial(&#39;com3&#39;);set(s,&#39;BaudRate&#39;,9600); %设置波特率s%打开串口fopen(s);%写入串口str = (&#39;hello world&#39;);fprintf(s, str ,&#39;async&#39;);% 读取串口fgetl(s)%关闭串口fclose(s);2."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>MATLAB串口通讯——以Arduino为例</title>
+	<link rel="stylesheet" href="/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="/">Haolan&#39;s Website</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="/post/">全部</a>
+				<a href="/tags/">分类</a>
+				<a href="/about/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/Wang-Alan" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="/post/">全部</a></li>
+			<li><a href="/tags/">分类</a></li>
+			<li><a href="/about/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>MATLAB串口通讯——以Arduino为例</h1>
+		<div class="content">
+			<p>Arduino代码</p>
+<p>每10s发送一次&quot;Hello World!&ldquo;给上位机，当收到上位机的任意字符串string，返回received string。</p>
+<pre><code class="language-{c}" data-lang="{c}">String inputString = &quot;recieved &quot;;
+bool stringComplete = false;
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
+  inputString.reserve(200);
+}
+
+void loop() {
+  analogWrite(LED_BUILTIN, 150);
+  delay(10000);
+  Serial.println(&quot;Hello World!&quot;);
+  if (stringComplete) {
+    Serial.println(inputString);
+    inputString = &quot;recieved &quot;;
+    stringComplete = false;
+  }
+}
+
+void serialEvent() {
+  while (Serial.available()) {
+    char inChar = (char)Serial.read();
+    inputString += inChar;
+    if (inChar == '\n') {
+      stringComplete = true;
+    }
+  }
+}
+</code></pre><p>MATLAB代码</p>
+<ol>
+<li>普通串口通讯</li>
+</ol>
+<pre><code class="language-{matlab}" data-lang="{matlab}">s=serial('com3');
+set(s,'BaudRate',9600);  %设置波特率s
+
+%打开串口
+fopen(s);
+
+%写入串口
+str = ('hello world');
+fprintf(s, str ,'async');
+% 读取串口
+fgetl(s)
+
+%关闭串口
+fclose(s);
+</code></pre><p>2.以事件的方式使用串口</p>
+<pre><code class="language-{matlab}" data-lang="{matlab}">global s
+
+s=serial('com3');%创建串口
+set(s,'BaudRate',9600); %设置波特率
+set(s,'inputBufferSize',1024000) %设置输入缓冲区域为1M
+%串口事件回调设置
+set(s,'BytesAvailableFcnMode','terminator');%设置中断响应函数对象
+set(s,'Terminator','CR');%设置终端触发方式
+s.BytesAvailableFcn=@ReceiveCallback;%ReceiveCallback是中断的触发函数，这里我是定义的。系统的回调函数为instrcallback;
+fopen(s);%打开串口
+
+% fclose(s);
+%clear s;
+</code></pre><pre><code class="language-{matlab}" data-lang="{matlab}">% 回调函数
+function ReceiveCallback(obj,event)%创建中断响应函数  
+    global s
+    str = fgetl(s)
+end
+</code></pre><p>真心感觉MATLAB前途无量！工科的不会用MATLAB，跟废物没什么区别。如果只会写一些简单的m文件，那也水平一般，要会用simulink、app designer、神经网络工具箱、优化工具箱用起来，真的好用，并且能解决问题！</p>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="/">Wang Haolan</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
