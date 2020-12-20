@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ADCP数据处理3.0</title>
+      <link>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%863-0/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%863-0/</guid>
+      <description>ADCP处理代码的2.0版本，存在以下问题：  编写时未考虑为MIKE11的一维水动力模型服务 仅考虑了一条河的情形，未考虑多条河的情况 受R语言和课题组已有代码的影响，数据输入输出主要以文本文件为主，其实EXCEL会是更好的选择 数据导入部分的算法过于复杂，从软件导出的数据也相对繁琐，这些都是可以简化的。  充分利用python模块 主要编写以下模块：
+ 类定义模块 仍然以section类为主，记录除了导入的原始结果外，增加计算结果。 通过继承方法，扩展类对象。 输入输出模块 将dataframe作为存储数据的主要表，不要用numpy array，numpy array应该在具体计算时使用 输入可以时多源的，输出excel和特定软件需求为主。 功能模块 要考虑可扩展性  </description>
+    </item>
     
     <item>
       <title>python?大数据？</title>

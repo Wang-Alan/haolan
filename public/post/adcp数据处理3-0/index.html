@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="ADCP数据处理3.0">
+<meta itemprop="description" content="ADCP处理代码的2.0版本，存在以下问题：  编写时未考虑为MIKE11的一维水动力模型服务 仅考虑了一条河的情形，未考虑多条河的情况 受R语言和课题组已有代码的影响，数据输入输出主要以文本文件为主，其实EXCEL会是更好的选择 数据导入部分的算法过于复杂，从软件导出的数据也相对繁琐，这些都是可以简化的。  充分利用python模块 主要编写以下模块：
+ 类定义模块 仍然以section类为主，记录除了导入的原始结果外，增加计算结果。 通过继承方法，扩展类对象。 输入输出模块 将dataframe作为存储数据的主要表，不要用numpy array，numpy array应该在具体计算时使用 输入可以时多源的，输出excel和特定软件需求为主。 功能模块 要考虑可扩展性  ">
+<meta itemprop="datePublished" content="2020-12-13T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-12-13T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="17">
+
+
+
+<meta itemprop="keywords" content="Python," /><meta property="og:title" content="ADCP数据处理3.0" />
+<meta property="og:description" content="ADCP处理代码的2.0版本，存在以下问题：  编写时未考虑为MIKE11的一维水动力模型服务 仅考虑了一条河的情形，未考虑多条河的情况 受R语言和课题组已有代码的影响，数据输入输出主要以文本文件为主，其实EXCEL会是更好的选择 数据导入部分的算法过于复杂，从软件导出的数据也相对繁琐，这些都是可以简化的。  充分利用python模块 主要编写以下模块：
+ 类定义模块 仍然以section类为主，记录除了导入的原始结果外，增加计算结果。 通过继承方法，扩展类对象。 输入输出模块 将dataframe作为存储数据的主要表，不要用numpy array，numpy array应该在具体计算时使用 输入可以时多源的，输出excel和特定软件需求为主。 功能模块 要考虑可扩展性  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%863-0/" />
+<meta property="article:published_time" content="2020-12-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-13T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ADCP数据处理3.0"/>
+<meta name="twitter:description" content="ADCP处理代码的2.0版本，存在以下问题：  编写时未考虑为MIKE11的一维水动力模型服务 仅考虑了一条河的情形，未考虑多条河的情况 受R语言和课题组已有代码的影响，数据输入输出主要以文本文件为主，其实EXCEL会是更好的选择 数据导入部分的算法过于复杂，从软件导出的数据也相对繁琐，这些都是可以简化的。  充分利用python模块 主要编写以下模块：
+ 类定义模块 仍然以section类为主，记录除了导入的原始结果外，增加计算结果。 通过继承方法，扩展类对象。 输入输出模块 将dataframe作为存储数据的主要表，不要用numpy array，numpy array应该在具体计算时使用 输入可以时多源的，输出excel和特定软件需求为主。 功能模块 要考虑可扩展性  "/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>ADCP数据处理3.0</title>
+	<link rel="stylesheet" href="/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="/">Haolan&#39;s Website</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="/post/">全部</a>
+				<a href="/tags/">分类</a>
+				<a href="/about/">关于</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/Wang-Alan" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="/post/">全部</a></li>
+			<li><a href="/tags/">分类</a></li>
+			<li><a href="/about/">关于</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>ADCP数据处理3.0</h1>
+		<div class="content">
+			<h2 id="adcp处理代码的20版本存在以下问题">ADCP处理代码的2.0版本，存在以下问题：<a href="#adcp处理代码的20版本存在以下问题" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ol>
+<li>编写时未考虑为MIKE11的一维水动力模型服务</li>
+<li>仅考虑了一条河的情形，未考虑多条河的情况</li>
+<li>受R语言和课题组已有代码的影响，数据输入输出主要以文本文件为主，其实EXCEL会是更好的选择</li>
+<li>数据导入部分的算法过于复杂，从软件导出的数据也相对繁琐，这些都是可以简化的。</li>
+</ol>
+<h2 id="充分利用python模块">充分利用python模块<a href="#充分利用python模块" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>主要编写以下模块：</p>
+<ul>
+<li>类定义模块
+仍然以section类为主，记录除了导入的原始结果外，增加计算结果。
+通过继承方法，扩展类对象。</li>
+<li>输入输出模块
+将dataframe作为存储数据的主要表，不要用numpy array，numpy array应该在具体计算时使用
+输入可以时多源的，输出excel和特定软件需求为主。</li>
+<li>功能模块
+要考虑可扩展性</li>
+</ul>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="/">Wang Haolan</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

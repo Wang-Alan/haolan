@@ -7,26 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>可能要开始做科研了</title>
-      <link>/post/%E5%8F%AF%E8%83%BD%E8%A6%81%E5%BC%80%E5%A7%8B%E5%81%9A%E7%A7%91%E7%A0%94%E4%BA%86/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E5%8F%AF%E8%83%BD%E8%A6%81%E5%BC%80%E5%A7%8B%E5%81%9A%E7%A7%91%E7%A0%94%E4%BA%86/</guid>
-      <description>2018年本科毕业，2018年硕士入学，到2019年11月，只做了一件事，科研，结果也还不错，发了篇WR。围绕着这跟主线，投了两篇写好的论文，参与了大修小修，审了几篇稿，组会汇报了几次，虽然讲的不是很好，但是也算对付得过去。大大小小的学术会议，也基本都参与了。
-2019年11月，汇报了三次，给前一阶段的科研，按下了暂停键，开始思考毕业论文的大框架，在大框架基本成熟的时候，2020年1月1日，申请硕博连读。
-申请通过之后，花了3-4个月的时间，完成了一份基金的写作，也算是把毕业论文的框架落实到纸面上，其实，只要照着基金做，毕业论文总是能做出来的，我也不是很慌。
-2020年5月，开启项目之旅，很庆幸，做项目的过程中，没人找我要proposal，也没人找我讨论科研，我也不用为了汇报而烦恼，也不用担心自己的毕业论文。唯一的痛苦，就是突如其来的ppt制作任务了，在这个阶段，我大概知道该怎么读文献了。
-相比科研，项目对我容易得多，毕竟都是一些确定的东西，并且不用负责任，有老师背书，我只要做就完事了。重点研发、种草、去无锡出差、去广州开会、去上海看展，有机会让我参与的，我基本都参与了。
-目前，手头还有个精细化曝气的装置可以做，以及完成毕业论文。这两个也都是我想做的事情，可以自己相对独立的开展，无论是老师的支持，还是资金方面，都是蛮好的。
-希望老师言而有信，希望我的科研能够顺利~
-一个阶段做一件事，是可以实现的。</description>
-    </item>
     
     <item>
       <title>为什么要把 R 代码写在 R markdown 上</title>
