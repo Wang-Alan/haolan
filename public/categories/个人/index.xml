@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>个人 on Haolan&#39;s Website</title>
+    <link>/categories/%E4%B8%AA%E4%BA%BA/</link>
+    <description>Recent content in 个人 on Haolan&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 03 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/%E4%B8%AA%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>基于Vue和云构建简易的单页面应用</title>
+      <link>/post/%E5%9F%BA%E4%BA%8Evue%E5%92%8C%E4%BA%91%E6%9E%84%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Wed, 03 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E5%9F%BA%E4%BA%8Evue%E5%92%8C%E4%BA%91%E6%9E%84%E5%BB%BA%E7%AE%80%E6%98%93%E7%9A%84%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8/</guid>
+      <description>前端发展 2009年之前，前端开发处于原始时代（IE8出现开发者模式） 2009年，node.js的出现标志前端进入现代化，同时确立前端工程师的岗位 2009年之后，出现许多打包工具、包管理工具等.
+-大漠穷秋
+node.js的出现在前端发展史上是具有里程碑意义的，基于node.js发展出的前端框架，例如Angular、Vue等，给前端工程师通过web技术快速开发应用提供了可能，同时，一定程度上促进了web应用的发展，降低了应用开发的门槛。
+Vue开发 Vue框架的作者是尤雨溪，借鉴了MVVM的设计模式，是国内目前非常活的框架。
+vue的核心概念 Vue的核心概念是组件，组件可以分为根组件和其他组件，其他组件与根组件一起组成组件树，构成整个应用，根组件与其他组件没什么不同，配置选项是一样的，所对应的组件实例行为也是一样的。
+根组件实例要挂载在应用实例上，作为渲染的起点。
+组件实例包括模板和js代码，模板主要是由html，js表达式，“Mustache”语法组成，代码主要包括组件实例的propery和生命周期钩子。
+模板语法 vue的模板语法主要是插值和指令
+插值具体包括文本、原始html、attribute和js表达式
+指令包括参数和修饰符，常用指令有相应的缩写
+组件通讯 组件间通讯，包括数据和事件。
+数据一般只能从父组件传向子组件，若父子组件间“级数”较少，则采用prop的方法传递，相当于为子组件创建property；若父子组件间“级数”较多，则可以采用provide/inject的方法传递。
+事件常为父组件监听子组件的事件，通过$emit方法实现。子组件需要触发父组件的事件，子组件内部没有相应的事件函数，“搜索范围”内找不到对应的事件，使用$emit，告知vue需要扩大搜索范围，就能找到相应的事件函数。另外，$emit方法可以抛出子组件的值给父组件。
+单页面应用 组件本身，就足矣形成界面，但是若干界面如何组合在一起，需要引入路由和状态管理，vue官方也提供了相应的工具，同时，vue-cli也可以生成相应得模板，其中代码通过单文件组件组织在一起。
+个人认为，vue特别厉害的一个思想是关注点分离并不意味着代码分离。将同一组件的html、css、js代码放在一个文件里，非常方便。
+函数计算和数据库 大部分程序都是多层架构的程序，至少包括数据层、业务逻辑层和表示层，vue编写的仅是程序的表示层，可能会有一些简单的小计算，因此需要引入函数计算和数据库。
+云技术是未来的趋势，阿里的函数计算和云数据库为完整app的开发提供了非常多的便利。以http作为触发器的函数计算，加上云存储，几乎可以实现所有应用。</description>
+    </item>
+    
+    <item>
+      <title>ADCP数据处理3.0</title>
+      <link>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%863-0/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%863-0/</guid>
+      <description>ADCP处理代码的2.0版本，存在以下问题：  编写时未考虑为MIKE11的一维水动力模型服务 仅考虑了一条河的情形，未考虑多条河的情况 受R语言和课题组已有代码的影响，数据输入输出主要以文本文件为主，其实EXCEL会是更好的选择 数据导入部分的算法过于复杂，从软件导出的数据也相对繁琐，这些都是可以简化的。  充分利用python模块 主要编写以下模块：
+ 类定义模块 仍然以section类为主，记录除了导入的原始结果外，增加计算结果。 通过继承方法，扩展类对象。 输入输出模块 将dataframe作为存储数据的主要表，不要用numpy array，numpy array应该在具体计算时使用 输入可以时多源的，输出excel和特定软件需求为主。 功能模块 要考虑可扩展性  </description>
+    </item>
+    
+    <item>
+      <title>MATLAB串口通讯——以Arduino为例</title>
+      <link>/post/matlab%E4%B8%B2%E5%8F%A3%E9%80%9A%E8%AE%AF-%E4%BB%A5arduino%E4%B8%BA%E4%BE%8B/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/matlab%E4%B8%B2%E5%8F%A3%E9%80%9A%E8%AE%AF-%E4%BB%A5arduino%E4%B8%BA%E4%BE%8B/</guid>
+      <description>Arduino代码
+每10s发送一次&amp;quot;Hello World!&amp;ldquo;给上位机，当收到上位机的任意字符串string，返回received string。
+String inputString = &amp;quot;recieved &amp;quot;;bool stringComplete = false;void setup() {pinMode(LED_BUILTIN, OUTPUT);Serial.begin(9600);inputString.reserve(200);}void loop() {analogWrite(LED_BUILTIN, 150);delay(10000);Serial.println(&amp;quot;Hello World!&amp;quot;);if (stringComplete) {Serial.println(inputString);inputString = &amp;quot;recieved &amp;quot;;stringComplete = false;}}void serialEvent() {while (Serial.available()) {char inChar = (char)Serial.read();inputString += inChar;if (inChar == &#39;\n&#39;) {stringComplete = true;}}}MATLAB代码
+ 普通串口通讯  s=serial(&#39;com3&#39;);set(s,&#39;BaudRate&#39;,9600); %设置波特率s%打开串口fopen(s);%写入串口str = (&#39;hello world&#39;);fprintf(s, str ,&#39;async&#39;);% 读取串口fgetl(s)%关闭串口fclose(s);2.</description>
+    </item>
+    
+    <item>
+      <title>简易单片机开发</title>
+      <link>/post/%E7%AE%80%E6%98%93%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%AE%80%E6%98%93%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91/</guid>
+      <description>51单片机，是我玩的第一种单片机，记得当时买了芝麻电子的开发板，与很多人看郭天祥的视频不同，我当时主要是看教材，《爱上单片机》。
+现在想想，51是非常适合入门的一个板子，它没有库函数，只能操作寄存器，在学习的过程中，会对原理有很具体的认识。
+后来，做智能开关的项目，因为51只有一组串口，如果要同时与两个串口进行通讯，需要虚拟一个软串口，但是项目周期比较紧，忍痛放弃了51，选择了Arduino用于开发。
+初次上手Arduino，发现这玩意是真的简单啊，凭借51的基础，基本上半个小时不到就能上手，并且用的贼6。
+之所以Arduino上手这么容易，主要是因为他将功能都包装成库函数了，并且给出了非常详细的示例代码。库函数让很多对寄存器的操作都被隐藏起来了，虽然可以在相应的头文件种查到具体操作的。但是，既然有了库函数，谁还回去深究具体的细节呢？这点在后面STM32的学习中得到了证实。
+STM32的官方，就给出了库函数版和寄存器版，当时几乎所有人都选择了库函数版，没有人再去关心寄存器版的代码是什么样子的。但是，由于最初51的基础，其实对STM32的原理还是有些感觉的，只是不再去关心更细节的东西了。毕竟不打算在电子设计领域深耕，了解点皮毛，会用就行。
+后来一次偶然的机会，去校外的辅导机构做兼职，职位是少儿机器人编程老师，当时最高端的课程，就是基于Arduino做的，面向孩子的年龄是14岁以上。以Arduino为载体，教给孩子的，更多的是C语言基础和输入输出的一些概念，在我看来，在知识本身和普通的C语言并没有什么区别，但是以Arduino为载体，孩子会更有兴趣。
+学一些编程语言的语法，其实是很容易的，难点主要是在编程的思维上面。</description>
+    </item>
+    
+    <item>
+      <title>python?大数据？</title>
+      <link>/post/python/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/python/</guid>
+      <description>python是一门有广度但是没有深度的语言，如果要做大数据处理，最好使用计算密集型语言，比如java、c、c#。python不属于计算密集型语言，设计之初有缺陷，有个所会导致python不能全方面支持并发和并行。
+java虽然也属于计算密集型语言，但是毕竟是应用层的语言，效率普遍都比较低，相比之下，c、c++、c#效率奇高，性能完爆。
+但是在应用层，如果要做大数据，java是主流，有两个主要的框架，天然的spark和hadoop。
+服务端默认都是支持python的，对于运维而言，python是第一语言，web应用有个django框架，属于中等级别，ins就是这个框架写的。
+所以学python值不值得呢？我也不知道，反正我是会用的。</description>
+    </item>
+    
+    <item>
+      <title>为什么要把 R 代码写在 R markdown 上</title>
+      <link>/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8A%8A-r-%E4%BB%A3%E7%A0%81%E5%86%99%E5%9C%A8-r-markdown-%E4%B8%8A/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8A%8A-r-%E4%BB%A3%E7%A0%81%E5%86%99%E5%9C%A8-r-markdown-%E4%B8%8A/</guid>
+      <description>R 代码原来写在哪里？  R 代码最常见的是写在脚本（.r）里，文字可以通过注释加在脚本的字里行间。但是存在一些问题：
+  在数据分析中，注释通常会涉及公式，在脚本中无法呈现
+  如果与他人交流数据分析过程，将代码与输出结果对应，沟通交流会很高效
+  数据分析过程中对代码参数修改过多，如果不做好记录，很容易忘记一些重要的细节
+  数据分析通常需要保存中间步骤的输出结果
+  于是 jupyter notebook 被开发出来了。最开始的 jupyter notebook 是给 python 语言开发的，现在也广泛的被数据分析师应用。但是最开始的 jupyter notebook 是在浏览器中运行的，浏览器中的 jupyter notebook 使用中有一些弊端，比如代码开发、调试等开发过程对 IDE 的使用频率非常高，将 jupyter notebook 放在浏览器运行会导致很多额外的步骤。
+为什么使用 R markdown  目前，它被整合进了 VS code - 非常有些的IDE -弊端也逐渐消失。而 VS code 下的 jupyter notebook 并不支持 R 语言，而 R 语言原生的与 jupyter notebook 对应的，便是 R markdown。
+此外，R markdown 相比于 jupyter notebook 还有额外的优势，包括：</description>
+    </item>
+    
+    <item>
+      <title>ADCP数据处理思路</title>
+      <link>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/adcp%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</guid>
+      <description>数据概况 ADCP会对选定河段的若干断面进行测量，每个断面是一个测次，每个测次由若干数据组组成，每个数据组都有唯一数据组序号（Ensemble Number），每个数据组对于任一变量含若干不等的数据，代表该变量不同深度的值。
+我们常用的变量包括：
+  水深 River Depth [m]
+  平均流速 Mean River Velocity (Ref: BT) [m/s]
+  速度
+ 东向速度 East Velocity (Ref: BT) [m/s] 北向速度 North Velocity (Ref: BT) [m/s] 垂向速度 East Up Velocity (Ref: BT) [m/s]    位置
+ 东向偏移量 East Displacement (Ref: BT) [m] 北向偏移量 North Displacement (Ref: BT) [m]    处理流程  用 WinRiverII 软件导出数据，每个测次每个变量会导出一个 txt 文件 把 txt 文件导入 python 处理数据并得出结果  包括：</description>
+    </item>
+    
+    <item>
+      <title>git 学习笔记</title>
+      <link>/post/git-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/git-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>说明：
+ git 只能追踪文本文件的修改，如代码、md文件等，不能追踪二进制文件修改，如word 以下仅是我会用到的一些常见命令，更多信息可以参考廖雪峰 git 教程和git 使用简易指南   创建版本库 git init把一个文件放进 git 仓库 git add &amp;lt;文件名&amp;gt;例如
+git add file1.txtgit add file2.txt file3.txtgit add .git commit -m &amp;lt;message&amp;gt;例如
+git commit -m &amp;#34;add file&amp;#34;git commit -m &amp;#34;modify files&amp;#34;git 工作流 查看仓库当前状态 git status查看具体修改内容 git diff &amp;lt;文件名&amp;gt;例如
+git diff file.txt查看历史记录 git log git log --pretty=oneline退回到历史版本 前一版
+git reset --hard HEAD^前二版</description>
+    </item>
+    
+    <item>
+      <title>R语言基础——数据</title>
+      <link>/post/r%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/r%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/</guid>
+      <description>提纲1. 如何读取数据2. 如何写入数据3. 数据格式与转化4. 数据框`data.frame`操作5. 当前工作目录1. 如何读取数据最基础函数 read.table()read.table(file, header = FALSE, sep =&amp;quot;&amp;quot;, quote = &amp;quot;\&amp;quot;&amp;#39;&amp;quot;, dec = &amp;quot;.&amp;quot;, row.names, col.names, as.is = !stringsAsFactors, na.strings = &amp;quot;NA&amp;quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &amp;quot;#&amp;quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &amp;quot;&amp;quot;, encoding = &amp;quot;unknown&amp;quot;, text）参数解释：</description>
+    </item>
+    
+    <item>
+      <title>™的爱情啊~</title>
+      <link>/post/%E7%9A%84%E7%88%B1%E6%83%85%E5%95%8A/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%9A%84%E7%88%B1%E6%83%85%E5%95%8A/</guid>
+      <description>我闹了好久才发现我爱的是以前的你，而我对现在的你好像没有一点好感，我放不下的是那段感情，不是你
+朱茵说：“如果一个人真的爱你，你是走不掉也跑不了的，除非她有意放你走，你还有什么不明白不甘心的
+哪天想起我也请你记得 当时我很喜欢你是真的 那些眼泪是真的 想和你有个未来也是真的
+你只看见我的无理取闹 刁蛮任性 我深夜里哭的喘不出气 看不见我每次等你消息满眼的失望 看不见我爱你的时候
+面无表情的擦肩而过都是装的 但回头看你是真的
+想知道那些谈了两三年恋爱分了是怎么熬过来的
+我把为你伤心的时刻都记录下来了 在我想起你的时候反复观看 生怕自己一个不小心又坠入你温柔陷阱</description>
+    </item>
+    
+  </channel>
+</rss>

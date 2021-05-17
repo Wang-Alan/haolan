@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 20 Oct 2018 20:57:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于我、关于这个网站</title>
+      <link>/about/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>你好，我是王浩岚（Alan Wang），毕业于上海理工大学，专业是环境工程，那是我永远的母校。在上理，我度过了最快乐的四年时光，那将是我一生的大学。目前在河海大学读研究生，专业是环境科学与工程。
+我的研究方向是城市弯曲河流的微生物氮转化过程，这是一个交叉学科，弯曲河流的水动力情况、微生物群落的分布特征、氮的生物地球化学循环过程，都是我需要研究的内容。可能我对这几个方面都会了解一些皮毛，但是单从理论的深度来看，我欠缺了很多，并且不太有机会能学得很深。
+虽然我的专业是环境科学与工程，但是我更擅长写代码，也喜欢写。这些年，我陆陆续续接触过 C、Python、Matlab、R，感觉写点代码，或者入门一个新的语言，不是太难的事情，但是由于专业方向的限制，我缺乏在写代码得某方面特别厉害。
+这个网站是我在学习 R 语言期间建立的。当时，无意中看到了谢益辉的博客，彻夜撸了一遍大佬的博文，第二天就搭建了这个网站，采用的是 Netlify + Blogdown + Hugo + Github。 Blogdown 的作者就是谢益辉。本来，按照我的性格，应该是坚持不了这么久的，但是鬼使神差的，买个了域名，haolan.wang，这个域名就是天生为我设计的，出于不浪费域名的缘故，就一直用到现在，并且打算一直用下去。
+如果你想联系我，我的电子邮件是 wang-haolan@foxmail.com。</description>
+    </item>
     
     <item>
       <title>基于Vue和云构建简易的单页面应用</title>
@@ -140,21 +153,6 @@ git reset --hard HEAD^前二版</description>
       
       <guid>/post/r%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/</guid>
       <description>提纲1. 如何读取数据2. 如何写入数据3. 数据格式与转化4. 数据框`data.frame`操作5. 当前工作目录1. 如何读取数据最基础函数 read.table()read.table(file, header = FALSE, sep =&amp;quot;&amp;quot;, quote = &amp;quot;\&amp;quot;&amp;#39;&amp;quot;, dec = &amp;quot;.&amp;quot;, row.names, col.names, as.is = !stringsAsFactors, na.strings = &amp;quot;NA&amp;quot;, colClasses = NA, nrows= -1, skip = 0, check.names = TRUE, fill =!blank.lines.skip, strip.white = FALSE, blank.lines.skip =TRUE, comment.char = &amp;quot;#&amp;quot;, allowEscapes = FALSE, flush =FALSE, stringsAsFactors =default.stringsAsFactors(), fileEncoding = &amp;quot;&amp;quot;, encoding = &amp;quot;unknown&amp;quot;, text）参数解释：</description>
-    </item>
-    
-    <item>
-      <title>™的爱情啊~</title>
-      <link>/post/%E7%9A%84%E7%88%B1%E6%83%85%E5%95%8A/</link>
-      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E7%9A%84%E7%88%B1%E6%83%85%E5%95%8A/</guid>
-      <description>我闹了好久才发现我爱的是以前的你，而我对现在的你好像没有一点好感，我放不下的是那段感情，不是你
-朱茵说：“如果一个人真的爱你，你是走不掉也跑不了的，除非她有意放你走，你还有什么不明白不甘心的
-哪天想起我也请你记得 当时我很喜欢你是真的 那些眼泪是真的 想和你有个未来也是真的
-你只看见我的无理取闹 刁蛮任性 我深夜里哭的喘不出气 看不见我每次等你消息满眼的失望 看不见我爱你的时候
-面无表情的擦肩而过都是装的 但回头看你是真的
-想知道那些谈了两三年恋爱分了是怎么熬过来的
-我把为你伤心的时刻都记录下来了 在我想起你的时候反复观看 生怕自己一个不小心又坠入你温柔陷阱</description>
     </item>
     
   </channel>

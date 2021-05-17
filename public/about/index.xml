@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Haolan&#39;s Website</title>
+    <link>/about/</link>
+    <description>Recent content in Abouts on Haolan&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>aboutwebsite</title>
+      <link>/about/aboutwebsite/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/about/aboutwebsite/</guid>
+      <description>这个网站</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>/about/aboutme/</link>
+      <pubDate>Sat, 20 Oct 2018 20:57:00 -0700</pubDate>
+      
+      <guid>/about/aboutme/</guid>
+      <description>欢迎光临，这是个人的Blog，随机不定时看心情更新。
+扫描二维码可关注公众号！</description>
+    </item>
+    
+  </channel>
+</rss>
